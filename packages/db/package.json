@@ -1,0 +1,15 @@
+{
+  "name": "@metris/db",
+  "version": "1.4.2",
+  "private": true,
+  "main": "knexfile.js",
+  "license": "MIT",
+  "scripts": {
+    "migrate": "knex migrate:latest --knexfile knexfile.js",
+    "migrate:rollback": "knex migrate:rollback --knexfile knexfile.js"
+  },
+  "dependencies": {
+    "knex": "^3.1.0",
+    "pg": "^8.12.0"
+  }
+}

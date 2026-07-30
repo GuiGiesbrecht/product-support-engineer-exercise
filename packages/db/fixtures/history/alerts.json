@@ -1,0 +1,79 @@
+[
+  {
+    "site": "leeds-depot",
+    "asset_serial": "SUN100-58201",
+    "type": "asset_offline",
+    "severity": "critical",
+    "status": "resolved",
+    "message": "No data received from Inverter 1 (Leeds Depot) for more than 6 hours.",
+    "triggered_at": "2026-06-15T09:15:11Z",
+    "resolved_at": "2026-06-15T16:03:27Z",
+    "created_by": "alert-scan"
+  },
+  {
+    "site": "factory-manchester",
+    "asset_serial": "ACU2-20415",
+    "type": "asset_offline",
+    "severity": "warning",
+    "status": "resolved",
+    "message": "No data received from Import Meter (Factory Manchester) for more than 6 hours.",
+    "triggered_at": "2026-06-22T18:15:06Z",
+    "resolved_at": "2026-06-23T07:44:50Z",
+    "created_by": "alert-scan"
+  },
+  {
+    "site": "brighton-retail-park",
+    "asset_serial": "SE160K-90144",
+    "type": "underperformance",
+    "severity": "warning",
+    "status": "resolved",
+    "message": "Inverter 1 (Brighton Retail Park) generated 38% below expected output for 2026-07-05.",
+    "triggered_at": "2026-07-06T06:15:09Z",
+    "resolved_at": "2026-07-06T11:20:15Z",
+    "created_by": "alert-scan"
+  },
+  {
+    "site": "glasgow-cold-storage",
+    "asset_serial": "WXT-5490",
+    "type": "asset_offline",
+    "severity": "warning",
+    "status": "resolved",
+    "message": "No data received from Weather Station (Glasgow Cold Storage) for more than 6 hours.",
+    "triggered_at": "2026-07-11T12:15:08Z",
+    "resolved_at": "2026-07-11T19:31:02Z",
+    "created_by": "alert-scan"
+  },
+  {
+    "site": "london-warehouse",
+    "asset_serial": null,
+    "type": "comms_degraded",
+    "severity": "info",
+    "status": "resolved",
+    "message": "SolarEdge vendor re-sync in progress for gateway SE-GW-2201; intermittent connectivity expected.",
+    "triggered_at": "2026-07-27T13:50:00Z",
+    "resolved_at": "2026-07-27T14:25:00Z",
+    "created_by": "support@metris.energy"
+  },
+  {
+    "site": "school-bristol",
+    "asset_serial": "SUN40-77412",
+    "type": "asset_offline",
+    "severity": "critical",
+    "status": "open",
+    "message": "No data received from Inverter 2 (School Bristol) for more than 6 hours. Last seen 2026-07-28T06:12:44Z.",
+    "triggered_at": "2026-07-28T12:15:09Z",
+    "resolved_at": null,
+    "created_by": "alert-scan"
+  },
+  {
+    "site": "school-bristol",
+    "asset_serial": "SUN40-77412",
+    "type": "asset_offline",
+    "severity": "critical",
+    "status": "open",
+    "message": "No data received from Inverter 2 (School Bristol) for more than 6 hours. Last seen 2026-07-28T06:12:44Z.",
+    "triggered_at": "2026-07-28T12:15:10Z",
+    "resolved_at": null,
+    "created_by": "alert-scan"
+  }
+]

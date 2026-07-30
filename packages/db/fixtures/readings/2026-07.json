@@ -1,0 +1,3467 @@
+[
+  {
+    "payload_id": "MB-f63380950bef",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-01",
+    "kwh": 1624.25,
+    "sent_at": "2026-07-01T20:02:23Z"
+  },
+  {
+    "payload_id": "SE-b1e822a5d1d3",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-01",
+    "kwh": 670.25,
+    "sent_at": "2026-07-01T20:02:34Z"
+  },
+  {
+    "payload_id": "SE-15834d209504",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-01",
+    "kwh": 654.25,
+    "sent_at": "2026-07-01T20:02:40Z"
+  },
+  {
+    "payload_id": "MB-ea32c4e39bce",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-01",
+    "kwh": 1108.25,
+    "sent_at": "2026-07-01T20:04:31Z"
+  },
+  {
+    "payload_id": "SE-ace1a3957578",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-01",
+    "kwh": 890.75,
+    "sent_at": "2026-07-01T20:04:40Z"
+  },
+  {
+    "payload_id": "SE-9fb4a2c5a044",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-01",
+    "kwh": 916,
+    "sent_at": "2026-07-01T20:04:42Z"
+  },
+  {
+    "payload_id": "SE-0475dc4cd193",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-01",
+    "kwh": 921.75,
+    "sent_at": "2026-07-01T20:06:19Z"
+  },
+  {
+    "payload_id": "MB-0efab9ea0b47",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-01",
+    "kwh": 710.25,
+    "sent_at": "2026-07-01T20:06:52Z"
+  },
+  {
+    "payload_id": "FS-cc8342e6e413",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-01",
+    "kwh": 318.75,
+    "sent_at": "2026-07-01T20:07:46Z"
+  },
+  {
+    "payload_id": "FS-8060193fdf43",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-01",
+    "kwh": 210,
+    "sent_at": "2026-07-01T20:07:47Z"
+  },
+  {
+    "payload_id": "MB-bfdc321bd826",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-01",
+    "kwh": 173.5,
+    "sent_at": "2026-07-01T20:07:49Z"
+  },
+  {
+    "payload_id": "FS-2058699c974f",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-01",
+    "kwh": 606,
+    "sent_at": "2026-07-01T20:09:43Z"
+  },
+  {
+    "payload_id": "FS-3e3f1f8a94cc",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-01",
+    "kwh": 602.5,
+    "sent_at": "2026-07-01T20:11:10Z"
+  },
+  {
+    "payload_id": "SE-0fad2a8f5221",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-02",
+    "kwh": 643.25,
+    "sent_at": "2026-07-02T20:02:30Z"
+  },
+  {
+    "payload_id": "MB-afdceb82498a",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-02",
+    "kwh": 1649.75,
+    "sent_at": "2026-07-02T20:02:50Z"
+  },
+  {
+    "payload_id": "SE-1051c4c447e3",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-02",
+    "kwh": 736.5,
+    "sent_at": "2026-07-02T20:02:52Z"
+  },
+  {
+    "payload_id": "SE-7cd4640e9570",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-02",
+    "kwh": 927,
+    "sent_at": "2026-07-02T20:04:23Z"
+  },
+  {
+    "payload_id": "MB-511351ca7999",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-02",
+    "kwh": 1191,
+    "sent_at": "2026-07-02T20:04:26Z"
+  },
+  {
+    "payload_id": "SE-b23ebd340b2d",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-02",
+    "kwh": 994.5,
+    "sent_at": "2026-07-02T20:04:27Z"
+  },
+  {
+    "payload_id": "SE-7e0e2bf4258f",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-02",
+    "kwh": 982.5,
+    "sent_at": "2026-07-02T20:06:13Z"
+  },
+  {
+    "payload_id": "MB-b4f8bd7d4a8f",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-02",
+    "kwh": 876,
+    "sent_at": "2026-07-02T20:06:41Z"
+  },
+  {
+    "payload_id": "MB-0a256592b653",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-02",
+    "kwh": 245.5,
+    "sent_at": "2026-07-02T20:07:24Z"
+  },
+  {
+    "payload_id": "FS-a783cb02e67b",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-02",
+    "kwh": 335.75,
+    "sent_at": "2026-07-02T20:07:35Z"
+  },
+  {
+    "payload_id": "FS-5053a3614dd9",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-02",
+    "kwh": 213.75,
+    "sent_at": "2026-07-02T20:07:41Z"
+  },
+  {
+    "payload_id": "FS-8ff03f59e934",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-02",
+    "kwh": 659.5,
+    "sent_at": "2026-07-02T20:09:21Z"
+  },
+  {
+    "payload_id": "FS-cf4fdf08faa2",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-02",
+    "kwh": 643.5,
+    "sent_at": "2026-07-02T20:11:24Z"
+  },
+  {
+    "payload_id": "SE-af618b8b30c6",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-03",
+    "kwh": 678.5,
+    "sent_at": "2026-07-03T20:02:11Z"
+  },
+  {
+    "payload_id": "SE-9012d5cb5dee",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-03",
+    "kwh": 592.5,
+    "sent_at": "2026-07-03T20:02:23Z"
+  },
+  {
+    "payload_id": "MB-4147e725dfd9",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-03",
+    "kwh": 1565.75,
+    "sent_at": "2026-07-03T20:02:47Z"
+  },
+  {
+    "payload_id": "SE-a9d24fba3142",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-03",
+    "kwh": 879.75,
+    "sent_at": "2026-07-03T20:04:29Z"
+  },
+  {
+    "payload_id": "MB-72694acbb193",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-03",
+    "kwh": 1005.5,
+    "sent_at": "2026-07-03T20:04:46Z"
+  },
+  {
+    "payload_id": "SE-4661a080d49d",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-03",
+    "kwh": 808.5,
+    "sent_at": "2026-07-03T20:04:48Z"
+  },
+  {
+    "payload_id": "MB-c5b6c8860f0c",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-03",
+    "kwh": 709.5,
+    "sent_at": "2026-07-03T20:06:22Z"
+  },
+  {
+    "payload_id": "SE-3b2715ad0034",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-03",
+    "kwh": 834.5,
+    "sent_at": "2026-07-03T20:06:32Z"
+  },
+  {
+    "payload_id": "FS-f45fd871597c",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-03",
+    "kwh": 203.75,
+    "sent_at": "2026-07-03T20:07:19Z"
+  },
+  {
+    "payload_id": "FS-54a49c403e11",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-03",
+    "kwh": 311.25,
+    "sent_at": "2026-07-03T20:07:22Z"
+  },
+  {
+    "payload_id": "MB-b702e5561f92",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-03",
+    "kwh": 235.5,
+    "sent_at": "2026-07-03T20:07:42Z"
+  },
+  {
+    "payload_id": "FS-c4b4a28571aa",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-03",
+    "kwh": 604.25,
+    "sent_at": "2026-07-03T20:09:25Z"
+  },
+  {
+    "payload_id": "FS-14f6479007b9",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-03",
+    "kwh": 582.25,
+    "sent_at": "2026-07-03T20:11:40Z"
+  },
+  {
+    "payload_id": "SE-4e4b7e098bd0",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-04",
+    "kwh": 546,
+    "sent_at": "2026-07-04T20:02:34Z"
+  },
+  {
+    "payload_id": "MB-f8578de6734e",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-04",
+    "kwh": 1374.5,
+    "sent_at": "2026-07-04T20:02:48Z"
+  },
+  {
+    "payload_id": "SE-e68b955ed234",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-04",
+    "kwh": 614.75,
+    "sent_at": "2026-07-04T20:02:48Z"
+  },
+  {
+    "payload_id": "SE-d0b523e1b49d",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-04",
+    "kwh": 731.5,
+    "sent_at": "2026-07-04T20:04:39Z"
+  },
+  {
+    "payload_id": "MB-2cb78efdcb31",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-04",
+    "kwh": 984.75,
+    "sent_at": "2026-07-04T20:04:49Z"
+  },
+  {
+    "payload_id": "SE-3446fda169ca",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-04",
+    "kwh": 763.25,
+    "sent_at": "2026-07-04T20:04:51Z"
+  },
+  {
+    "payload_id": "SE-1a0d50895ab0",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-04",
+    "kwh": 755.75,
+    "sent_at": "2026-07-04T20:06:28Z"
+  },
+  {
+    "payload_id": "MB-f7354fa94cb5",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-04",
+    "kwh": 625.5,
+    "sent_at": "2026-07-04T20:06:34Z"
+  },
+  {
+    "payload_id": "MB-ef694c06ea30",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-04",
+    "kwh": 158,
+    "sent_at": "2026-07-04T20:07:13Z"
+  },
+  {
+    "payload_id": "FS-a25057f28ea6",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-04",
+    "kwh": 167.75,
+    "sent_at": "2026-07-04T20:07:19Z"
+  },
+  {
+    "payload_id": "FS-8389f2ef2402",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-04",
+    "kwh": 259.75,
+    "sent_at": "2026-07-04T20:07:33Z"
+  },
+  {
+    "payload_id": "FS-81b3ff9a7de6",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-04",
+    "kwh": 566,
+    "sent_at": "2026-07-04T20:09:28Z"
+  },
+  {
+    "payload_id": "FS-a45531c680a6",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-04",
+    "kwh": 554.75,
+    "sent_at": "2026-07-04T20:11:45Z"
+  },
+  {
+    "payload_id": "SE-c4abdd6bb233",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-05",
+    "kwh": 735.25,
+    "sent_at": "2026-07-05T20:02:24Z"
+  },
+  {
+    "payload_id": "SE-655c3bdad399",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-05",
+    "kwh": 658,
+    "sent_at": "2026-07-05T20:02:25Z"
+  },
+  {
+    "payload_id": "MB-e38c1abd0360",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-05",
+    "kwh": 1687.5,
+    "sent_at": "2026-07-05T20:02:48Z"
+  },
+  {
+    "payload_id": "SE-db3b70c1a62f",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-05",
+    "kwh": 899.75,
+    "sent_at": "2026-07-05T20:04:25Z"
+  },
+  {
+    "payload_id": "MB-c43662a7e1e6",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-05",
+    "kwh": 1265.75,
+    "sent_at": "2026-07-05T20:04:26Z"
+  },
+  {
+    "payload_id": "SE-d413cb68acb9",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-05",
+    "kwh": 942.25,
+    "sent_at": "2026-07-05T20:04:44Z"
+  },
+  {
+    "payload_id": "MB-fcb86e562bac",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-05",
+    "kwh": 812.25,
+    "sent_at": "2026-07-05T20:06:27Z"
+  },
+  {
+    "payload_id": "SE-70e48bedda7f",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-05",
+    "kwh": 906.75,
+    "sent_at": "2026-07-05T20:06:38Z"
+  },
+  {
+    "payload_id": "FS-6288be6deb1d",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-05",
+    "kwh": 221.5,
+    "sent_at": "2026-07-05T20:07:18Z"
+  },
+  {
+    "payload_id": "FS-fcfb7a235944",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-05",
+    "kwh": 330,
+    "sent_at": "2026-07-05T20:07:27Z"
+  },
+  {
+    "payload_id": "MB-4e7ce5110ce5",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-05",
+    "kwh": 163.5,
+    "sent_at": "2026-07-05T20:07:41Z"
+  },
+  {
+    "payload_id": "FS-273469de4d1e",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-05",
+    "kwh": 652.25,
+    "sent_at": "2026-07-05T20:09:15Z"
+  },
+  {
+    "payload_id": "FS-5119272aff27",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-05",
+    "kwh": 647.75,
+    "sent_at": "2026-07-05T20:11:43Z"
+  },
+  {
+    "payload_id": "SE-9a1797451f18",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-06",
+    "kwh": 711.5,
+    "sent_at": "2026-07-06T20:02:14Z"
+  },
+  {
+    "payload_id": "MB-42b1ce32aecc",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-06",
+    "kwh": 1786.25,
+    "sent_at": "2026-07-06T20:02:26Z"
+  },
+  {
+    "payload_id": "SE-3c23e990028c",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-06",
+    "kwh": 806,
+    "sent_at": "2026-07-06T20:02:29Z"
+  },
+  {
+    "payload_id": "MB-966e075be8ab",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-06",
+    "kwh": 1219.25,
+    "sent_at": "2026-07-06T20:04:27Z"
+  },
+  {
+    "payload_id": "SE-1a27bc309828",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-06",
+    "kwh": 1025,
+    "sent_at": "2026-07-06T20:04:29Z"
+  },
+  {
+    "payload_id": "SE-beafcc247f83",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-06",
+    "kwh": 961.25,
+    "sent_at": "2026-07-06T20:04:49Z"
+  },
+  {
+    "payload_id": "MB-8caa84cb9a60",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-06",
+    "kwh": 859.5,
+    "sent_at": "2026-07-06T20:06:44Z"
+  },
+  {
+    "payload_id": "SE-5f07538e660b",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-06",
+    "kwh": 970.75,
+    "sent_at": "2026-07-06T20:06:44Z"
+  },
+  {
+    "payload_id": "FS-f4fc01430009",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-06",
+    "kwh": 227.75,
+    "sent_at": "2026-07-06T20:07:21Z"
+  },
+  {
+    "payload_id": "FS-bd55599eb595",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-06",
+    "kwh": 356.75,
+    "sent_at": "2026-07-06T20:07:27Z"
+  },
+  {
+    "payload_id": "MB-d2addd6ac50e",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-06",
+    "kwh": 215.75,
+    "sent_at": "2026-07-06T20:07:27Z"
+  },
+  {
+    "payload_id": "FS-472be0465d85",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-06",
+    "kwh": 682,
+    "sent_at": "2026-07-06T20:09:20Z"
+  },
+  {
+    "payload_id": "FS-5333e996fe78",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-06",
+    "kwh": 637.5,
+    "sent_at": "2026-07-06T20:11:10Z"
+  },
+  {
+    "payload_id": "SE-8db0a997e1f2",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-07",
+    "kwh": 796.75,
+    "sent_at": "2026-07-07T20:02:13Z"
+  },
+  {
+    "payload_id": "SE-dd87ce74233e",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-07",
+    "kwh": 693.5,
+    "sent_at": "2026-07-07T20:02:34Z"
+  },
+  {
+    "payload_id": "MB-775a0a396a2b",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-07",
+    "kwh": 1850,
+    "sent_at": "2026-07-07T20:02:38Z"
+  },
+  {
+    "payload_id": "SE-662c1f018502",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-07",
+    "kwh": 1051,
+    "sent_at": "2026-07-07T20:04:18Z"
+  },
+  {
+    "payload_id": "SE-63da7538a75c",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-07",
+    "kwh": 959.5,
+    "sent_at": "2026-07-07T20:04:27Z"
+  },
+  {
+    "payload_id": "MB-0f4844bd5e42",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-07",
+    "kwh": 1473.25,
+    "sent_at": "2026-07-07T20:04:51Z"
+  },
+  {
+    "payload_id": "SE-336ea424c055",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-07",
+    "kwh": 995.75,
+    "sent_at": "2026-07-07T20:06:40Z"
+  },
+  {
+    "payload_id": "MB-e0ec81e7b8c2",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-07",
+    "kwh": 892.5,
+    "sent_at": "2026-07-07T20:06:47Z"
+  },
+  {
+    "payload_id": "FS-08adc8835e34",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-07",
+    "kwh": 361.25,
+    "sent_at": "2026-07-07T20:07:19Z"
+  },
+  {
+    "payload_id": "FS-b49abed7e6c2",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-07",
+    "kwh": 246.75,
+    "sent_at": "2026-07-07T20:07:28Z"
+  },
+  {
+    "payload_id": "MB-233d6fd4767c",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-07",
+    "kwh": 225.75,
+    "sent_at": "2026-07-07T20:07:37Z"
+  },
+  {
+    "payload_id": "FS-9f1d49b8401d",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-07",
+    "kwh": 703.5,
+    "sent_at": "2026-07-07T20:09:13Z"
+  },
+  {
+    "payload_id": "FS-bbdb53e671f0",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-07",
+    "kwh": 638.25,
+    "sent_at": "2026-07-07T20:11:41Z"
+  },
+  {
+    "payload_id": "MB-73fecf94c72d",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-08",
+    "kwh": 1685.5,
+    "sent_at": "2026-07-08T20:02:36Z"
+  },
+  {
+    "payload_id": "SE-ec9bb6b2ec01",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-08",
+    "kwh": 703,
+    "sent_at": "2026-07-08T20:02:36Z"
+  },
+  {
+    "payload_id": "SE-2966594214c6",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-08",
+    "kwh": 671.25,
+    "sent_at": "2026-07-08T20:02:51Z"
+  },
+  {
+    "payload_id": "SE-638fff255040",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-08",
+    "kwh": 834.75,
+    "sent_at": "2026-07-08T20:04:23Z"
+  },
+  {
+    "payload_id": "SE-7bbceb4be95b",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-08",
+    "kwh": 919,
+    "sent_at": "2026-07-08T20:04:42Z"
+  },
+  {
+    "payload_id": "MB-3b0326da35c3",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-08",
+    "kwh": 1097.25,
+    "sent_at": "2026-07-08T20:04:45Z"
+  },
+  {
+    "payload_id": "MB-38abc16df1b2",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-08",
+    "kwh": 782.5,
+    "sent_at": "2026-07-08T20:06:21Z"
+  },
+  {
+    "payload_id": "SE-a0e4a04d0b92",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-08",
+    "kwh": 869.5,
+    "sent_at": "2026-07-08T20:06:25Z"
+  },
+  {
+    "payload_id": "MB-0e8ac986827c",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-08",
+    "kwh": 175.5,
+    "sent_at": "2026-07-08T20:07:23Z"
+  },
+  {
+    "payload_id": "FS-cba5775aa391",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-08",
+    "kwh": 211.25,
+    "sent_at": "2026-07-08T20:07:37Z"
+  },
+  {
+    "payload_id": "FS-2633375bfa62",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-08",
+    "kwh": 312.25,
+    "sent_at": "2026-07-08T20:07:38Z"
+  },
+  {
+    "payload_id": "FS-bb5bb19c8e12",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-08",
+    "kwh": 614.75,
+    "sent_at": "2026-07-08T20:09:43Z"
+  },
+  {
+    "payload_id": "FS-8f2809e03e0c",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-08",
+    "kwh": 626.75,
+    "sent_at": "2026-07-08T20:11:19Z"
+  },
+  {
+    "payload_id": "SE-4581a8946d85",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-09",
+    "kwh": 671,
+    "sent_at": "2026-07-09T20:02:31Z"
+  },
+  {
+    "payload_id": "MB-ad800aae5314",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-09",
+    "kwh": 1487.5,
+    "sent_at": "2026-07-09T20:02:52Z"
+  },
+  {
+    "payload_id": "SE-6518cc93283a",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-09",
+    "kwh": 587.5,
+    "sent_at": "2026-07-09T20:02:52Z"
+  },
+  {
+    "payload_id": "SE-c35f09896a37",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-09",
+    "kwh": 829,
+    "sent_at": "2026-07-09T20:04:16Z"
+  },
+  {
+    "payload_id": "MB-1d7da93bbe68",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-09",
+    "kwh": 1196.75,
+    "sent_at": "2026-07-09T20:04:36Z"
+  },
+  {
+    "payload_id": "SE-27662798de32",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-09",
+    "kwh": 860,
+    "sent_at": "2026-07-09T20:04:37Z"
+  },
+  {
+    "payload_id": "SE-61ab4563dcf0",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-09",
+    "kwh": 869,
+    "sent_at": "2026-07-09T20:06:19Z"
+  },
+  {
+    "payload_id": "MB-2c91d63ce099",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-09",
+    "kwh": 809.5,
+    "sent_at": "2026-07-09T20:06:54Z"
+  },
+  {
+    "payload_id": "MB-0ffd56a3d690",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-09",
+    "kwh": 179.25,
+    "sent_at": "2026-07-09T20:07:20Z"
+  },
+  {
+    "payload_id": "FS-e10601ce4847",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-09",
+    "kwh": 194.25,
+    "sent_at": "2026-07-09T20:07:30Z"
+  },
+  {
+    "payload_id": "FS-eafb2101fb1f",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-09",
+    "kwh": 293.25,
+    "sent_at": "2026-07-09T20:07:50Z"
+  },
+  {
+    "payload_id": "FS-f00c94a0d282",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-09",
+    "kwh": 593.75,
+    "sent_at": "2026-07-09T20:09:54Z"
+  },
+  {
+    "payload_id": "FS-2ce2f80941de",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-09",
+    "kwh": 591.25,
+    "sent_at": "2026-07-09T20:11:26Z"
+  },
+  {
+    "payload_id": "MB-444d7fa02958",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-10",
+    "kwh": 1616.5,
+    "sent_at": "2026-07-10T20:02:22Z"
+  },
+  {
+    "payload_id": "SE-18f4f1c7abfe",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-10",
+    "kwh": 634.75,
+    "sent_at": "2026-07-10T20:02:41Z"
+  },
+  {
+    "payload_id": "SE-3c472dd3f139",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-10",
+    "kwh": 580.5,
+    "sent_at": "2026-07-10T20:02:49Z"
+  },
+  {
+    "payload_id": "SE-b056687d3ed0",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-10",
+    "kwh": 812.25,
+    "sent_at": "2026-07-10T20:04:10Z"
+  },
+  {
+    "payload_id": "SE-b2e798dc8dd4",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-10",
+    "kwh": 728,
+    "sent_at": "2026-07-10T20:04:48Z"
+  },
+  {
+    "payload_id": "MB-d114db85ad7d",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-10",
+    "kwh": 977.75,
+    "sent_at": "2026-07-10T20:04:50Z"
+  },
+  {
+    "payload_id": "SE-5207d4fab131",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-10",
+    "kwh": 744.5,
+    "sent_at": "2026-07-10T20:06:32Z"
+  },
+  {
+    "payload_id": "MB-9ac7223807b1",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-10",
+    "kwh": 670.75,
+    "sent_at": "2026-07-10T20:06:49Z"
+  },
+  {
+    "payload_id": "MB-16dab54facb5",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-10",
+    "kwh": 240.5,
+    "sent_at": "2026-07-10T20:07:35Z"
+  },
+  {
+    "payload_id": "FS-05d48fe331e8",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-10",
+    "kwh": 185,
+    "sent_at": "2026-07-10T20:07:38Z"
+  },
+  {
+    "payload_id": "FS-d9f282843002",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-10",
+    "kwh": 286.25,
+    "sent_at": "2026-07-10T20:07:41Z"
+  },
+  {
+    "payload_id": "FS-c75771526dd3",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-10",
+    "kwh": 565,
+    "sent_at": "2026-07-10T20:09:13Z"
+  },
+  {
+    "payload_id": "FS-19024e72c14e",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-10",
+    "kwh": 550.75,
+    "sent_at": "2026-07-10T20:11:43Z"
+  },
+  {
+    "payload_id": "SE-3d9367ab7410",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-11",
+    "kwh": 729.25,
+    "sent_at": "2026-07-11T20:02:14Z"
+  },
+  {
+    "payload_id": "SE-fd6eec0fe5b1",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-11",
+    "kwh": 676.5,
+    "sent_at": "2026-07-11T20:02:18Z"
+  },
+  {
+    "payload_id": "MB-f9fef663d7dd",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-11",
+    "kwh": 1827.5,
+    "sent_at": "2026-07-11T20:02:22Z"
+  },
+  {
+    "payload_id": "SE-670e27ca27bf",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-11",
+    "kwh": 873.25,
+    "sent_at": "2026-07-11T20:04:11Z"
+  },
+  {
+    "payload_id": "MB-a9a6a626b99a",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-11",
+    "kwh": 1098,
+    "sent_at": "2026-07-11T20:04:19Z"
+  },
+  {
+    "payload_id": "SE-bed5d4c7e1dd",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-11",
+    "kwh": 965.25,
+    "sent_at": "2026-07-11T20:04:43Z"
+  },
+  {
+    "payload_id": "MB-4ef0f3030cfa",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-11",
+    "kwh": 825.75,
+    "sent_at": "2026-07-11T20:06:33Z"
+  },
+  {
+    "payload_id": "SE-9cb856154e36",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-11",
+    "kwh": 912.75,
+    "sent_at": "2026-07-11T20:06:34Z"
+  },
+  {
+    "payload_id": "FS-f80f2a5b7ce9",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-11",
+    "kwh": 344,
+    "sent_at": "2026-07-11T20:07:22Z"
+  },
+  {
+    "payload_id": "FS-0b6c82730976",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-11",
+    "kwh": 218.75,
+    "sent_at": "2026-07-11T20:07:25Z"
+  },
+  {
+    "payload_id": "MB-bf336b7fcb8f",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-11",
+    "kwh": 164.75,
+    "sent_at": "2026-07-11T20:07:39Z"
+  },
+  {
+    "payload_id": "FS-bb5810145013",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-11",
+    "kwh": 662.75,
+    "sent_at": "2026-07-11T20:09:50Z"
+  },
+  {
+    "payload_id": "FS-f3efba185a11",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-11",
+    "kwh": 621.5,
+    "sent_at": "2026-07-11T20:11:26Z"
+  },
+  {
+    "payload_id": "SE-15bbf09d1301",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-12",
+    "kwh": 672.25,
+    "sent_at": "2026-07-12T20:02:27Z"
+  },
+  {
+    "payload_id": "MB-48fd400fa33f",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-12",
+    "kwh": 1771.25,
+    "sent_at": "2026-07-12T20:02:28Z"
+  },
+  {
+    "payload_id": "SE-26340b69b5c5",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-12",
+    "kwh": 739.75,
+    "sent_at": "2026-07-12T20:02:38Z"
+  },
+  {
+    "payload_id": "SE-a818880211ef",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-12",
+    "kwh": 923,
+    "sent_at": "2026-07-12T20:04:31Z"
+  },
+  {
+    "payload_id": "MB-9f9ea5c8b2ee",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-12",
+    "kwh": 1332.5,
+    "sent_at": "2026-07-12T20:04:49Z"
+  },
+  {
+    "payload_id": "SE-49848134d95d",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-12",
+    "kwh": 1039.75,
+    "sent_at": "2026-07-12T20:04:53Z"
+  },
+  {
+    "payload_id": "SE-39bcefd069c8",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-12",
+    "kwh": 984,
+    "sent_at": "2026-07-12T20:06:14Z"
+  },
+  {
+    "payload_id": "MB-50390c5fee71",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-12",
+    "kwh": 878.5,
+    "sent_at": "2026-07-12T20:06:40Z"
+  },
+  {
+    "payload_id": "MB-7b217f64206f",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-12",
+    "kwh": 186,
+    "sent_at": "2026-07-12T20:07:11Z"
+  },
+  {
+    "payload_id": "FS-9168eb1bc34b",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-12",
+    "kwh": 359.5,
+    "sent_at": "2026-07-12T20:07:27Z"
+  },
+  {
+    "payload_id": "FS-32a8f18174f7",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-12",
+    "kwh": 238.75,
+    "sent_at": "2026-07-12T20:07:38Z"
+  },
+  {
+    "payload_id": "FS-5e6126620099",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-12",
+    "kwh": 690,
+    "sent_at": "2026-07-12T20:09:24Z"
+  },
+  {
+    "payload_id": "FS-7ae039b3536b",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-12",
+    "kwh": 672.75,
+    "sent_at": "2026-07-12T20:11:26Z"
+  },
+  {
+    "payload_id": "SE-44b77e6cf129",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-13",
+    "kwh": 722,
+    "sent_at": "2026-07-13T20:02:26Z"
+  },
+  {
+    "payload_id": "SE-83c1f8b99683",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-13",
+    "kwh": 738.75,
+    "sent_at": "2026-07-13T20:02:32Z"
+  },
+  {
+    "payload_id": "MB-e0af4b3c89b2",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-13",
+    "kwh": 1768,
+    "sent_at": "2026-07-13T20:02:38Z"
+  },
+  {
+    "payload_id": "SE-ec5d21c33a5b",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-13",
+    "kwh": 912,
+    "sent_at": "2026-07-13T20:04:36Z"
+  },
+  {
+    "payload_id": "MB-62e2c6337410",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-13",
+    "kwh": 1212.75,
+    "sent_at": "2026-07-13T20:04:47Z"
+  },
+  {
+    "payload_id": "SE-9884469c83b3",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-13",
+    "kwh": 962.25,
+    "sent_at": "2026-07-13T20:04:49Z"
+  },
+  {
+    "payload_id": "MB-d30169f082c4",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-13",
+    "kwh": 792.5,
+    "sent_at": "2026-07-13T20:06:22Z"
+  },
+  {
+    "payload_id": "SE-ae41dd0512ec",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-13",
+    "kwh": 916.25,
+    "sent_at": "2026-07-13T20:06:46Z"
+  },
+  {
+    "payload_id": "MB-f742282a826c",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-13",
+    "kwh": 222,
+    "sent_at": "2026-07-13T20:07:22Z"
+  },
+  {
+    "payload_id": "FS-59b902e007cb",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-13",
+    "kwh": 215.5,
+    "sent_at": "2026-07-13T20:07:34Z"
+  },
+  {
+    "payload_id": "FS-f659a0a27cdd",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-13",
+    "kwh": 323.75,
+    "sent_at": "2026-07-13T20:07:50Z"
+  },
+  {
+    "payload_id": "FS-b2131e1d071c",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-13",
+    "kwh": 652.25,
+    "sent_at": "2026-07-13T20:09:40Z"
+  },
+  {
+    "payload_id": "FS-d5cd1945a4e6",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-13",
+    "kwh": 652.25,
+    "sent_at": "2026-07-13T20:11:51Z"
+  },
+  {
+    "payload_id": "SE-07c83961c208",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-14",
+    "kwh": 662.25,
+    "sent_at": "2026-07-14T20:02:35Z"
+  },
+  {
+    "payload_id": "MB-07074f16151f",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-14",
+    "kwh": 1533.75,
+    "sent_at": "2026-07-14T20:02:38Z"
+  },
+  {
+    "payload_id": "SE-c0eeb07a4aa2",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-14",
+    "kwh": 635.75,
+    "sent_at": "2026-07-14T20:02:51Z"
+  },
+  {
+    "payload_id": "MB-926f93d3dc44",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-14",
+    "kwh": 1219.25,
+    "sent_at": "2026-07-14T20:04:36Z"
+  },
+  {
+    "payload_id": "SE-2183859e38ae",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-14",
+    "kwh": 842.5,
+    "sent_at": "2026-07-14T20:04:39Z"
+  },
+  {
+    "payload_id": "SE-027f35d6a8e9",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-14",
+    "kwh": 814,
+    "sent_at": "2026-07-14T20:04:50Z"
+  },
+  {
+    "payload_id": "MB-e008a5847ad6",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-14",
+    "kwh": 614.75,
+    "sent_at": "2026-07-14T20:06:21Z"
+  },
+  {
+    "payload_id": "SE-c5b93758065e",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-14",
+    "kwh": 835.25,
+    "sent_at": "2026-07-14T20:06:48Z"
+  },
+  {
+    "payload_id": "MB-885a02662d86",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-14",
+    "kwh": 254,
+    "sent_at": "2026-07-14T20:07:20Z"
+  },
+  {
+    "payload_id": "FS-3c4d392f240a",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-14",
+    "kwh": 196.5,
+    "sent_at": "2026-07-14T20:07:37Z"
+  },
+  {
+    "payload_id": "FS-013559447773",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-14",
+    "kwh": 299.5,
+    "sent_at": "2026-07-14T20:07:40Z"
+  },
+  {
+    "payload_id": "FS-792685caa139",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-14",
+    "kwh": 573.25,
+    "sent_at": "2026-07-14T20:09:41Z"
+  },
+  {
+    "payload_id": "FS-8a05c07bb1db",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-14",
+    "kwh": 610,
+    "sent_at": "2026-07-14T20:11:29Z"
+  },
+  {
+    "payload_id": "MB-7d8eb8d00ce7",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-15",
+    "kwh": 1573.75,
+    "sent_at": "2026-07-15T20:02:16Z"
+  },
+  {
+    "payload_id": "SE-06cd06ff9075",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-15",
+    "kwh": 639.75,
+    "sent_at": "2026-07-15T20:02:26Z"
+  },
+  {
+    "payload_id": "SE-741747e4ce58",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-15",
+    "kwh": 711.25,
+    "sent_at": "2026-07-15T20:02:33Z"
+  },
+  {
+    "payload_id": "MB-56ec1bc6ed30",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-15",
+    "kwh": 1122.25,
+    "sent_at": "2026-07-15T20:04:23Z"
+  },
+  {
+    "payload_id": "SE-4940da749a5a",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-15",
+    "kwh": 924.75,
+    "sent_at": "2026-07-15T20:04:27Z"
+  },
+  {
+    "payload_id": "SE-0f9d202b0f6a",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-15",
+    "kwh": 857.5,
+    "sent_at": "2026-07-15T20:04:52Z"
+  },
+  {
+    "payload_id": "MB-b2a139a95f25",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-15",
+    "kwh": 707.25,
+    "sent_at": "2026-07-15T20:06:41Z"
+  },
+  {
+    "payload_id": "SE-8917eab7141b",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-15",
+    "kwh": 865.25,
+    "sent_at": "2026-07-15T20:06:50Z"
+  },
+  {
+    "payload_id": "MB-eb4cda91f4ce",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-15",
+    "kwh": 164.5,
+    "sent_at": "2026-07-15T20:07:17Z"
+  },
+  {
+    "payload_id": "FS-0c10dc9049e3",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-15",
+    "kwh": 205.5,
+    "sent_at": "2026-07-15T20:07:30Z"
+  },
+  {
+    "payload_id": "FS-b46a3ae84edb",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-15",
+    "kwh": 304.75,
+    "sent_at": "2026-07-15T20:07:36Z"
+  },
+  {
+    "payload_id": "FS-5c31fb19995f",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-15",
+    "kwh": 619.75,
+    "sent_at": "2026-07-15T20:09:35Z"
+  },
+  {
+    "payload_id": "FS-0ad92bd60289",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-15",
+    "kwh": 617,
+    "sent_at": "2026-07-15T20:11:51Z"
+  },
+  {
+    "payload_id": "SE-255097f18c5d",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-16",
+    "kwh": 759.25,
+    "sent_at": "2026-07-16T20:02:33Z"
+  },
+  {
+    "payload_id": "SE-d132d74af775",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-16",
+    "kwh": 682.5,
+    "sent_at": "2026-07-16T20:02:36Z"
+  },
+  {
+    "payload_id": "MB-b94bb26e000a",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-16",
+    "kwh": 1733,
+    "sent_at": "2026-07-16T20:02:42Z"
+  },
+  {
+    "payload_id": "SE-431e8ad9c213",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-16",
+    "kwh": 965.5,
+    "sent_at": "2026-07-16T20:04:32Z"
+  },
+  {
+    "payload_id": "SE-2c1c36a46dcf",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-16",
+    "kwh": 942.5,
+    "sent_at": "2026-07-16T20:04:37Z"
+  },
+  {
+    "payload_id": "MB-4ad7f748d8aa",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-16",
+    "kwh": 1276.5,
+    "sent_at": "2026-07-16T20:04:47Z"
+  },
+  {
+    "payload_id": "SE-d7808052788d",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-16",
+    "kwh": 978,
+    "sent_at": "2026-07-16T20:06:12Z"
+  },
+  {
+    "payload_id": "MB-4c692ab03424",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-16",
+    "kwh": 801,
+    "sent_at": "2026-07-16T20:06:28Z"
+  },
+  {
+    "payload_id": "FS-aabd6e8d5ca1",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-16",
+    "kwh": 349,
+    "sent_at": "2026-07-16T20:07:26Z"
+  },
+  {
+    "payload_id": "MB-b73b7d8f1b36",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-16",
+    "kwh": 190.75,
+    "sent_at": "2026-07-16T20:07:39Z"
+  },
+  {
+    "payload_id": "FS-6e9ea4276cd4",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-16",
+    "kwh": 227,
+    "sent_at": "2026-07-16T20:07:41Z"
+  },
+  {
+    "payload_id": "FS-5910ff8d31ff",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-16",
+    "kwh": 674.5,
+    "sent_at": "2026-07-16T20:09:15Z"
+  },
+  {
+    "payload_id": "FS-016f14707f8e",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-16",
+    "kwh": 662.25,
+    "sent_at": "2026-07-16T20:11:48Z"
+  },
+  {
+    "payload_id": "SE-0478cb00ee3c",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-17",
+    "kwh": 628.25,
+    "sent_at": "2026-07-17T20:02:12Z"
+  },
+  {
+    "payload_id": "MB-a7cb326c42db",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-17",
+    "kwh": 1614.5,
+    "sent_at": "2026-07-17T20:02:33Z"
+  },
+  {
+    "payload_id": "SE-57702f9d664c",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-17",
+    "kwh": 709.25,
+    "sent_at": "2026-07-17T20:02:54Z"
+  },
+  {
+    "payload_id": "MB-5dd4cc4d65e4",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-17",
+    "kwh": 1256.25,
+    "sent_at": "2026-07-17T20:04:15Z"
+  },
+  {
+    "payload_id": "SE-8c4e7e13c8bf",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-17",
+    "kwh": 921.75,
+    "sent_at": "2026-07-17T20:04:46Z"
+  },
+  {
+    "payload_id": "SE-db668acb698c",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-17",
+    "kwh": 823.75,
+    "sent_at": "2026-07-17T20:04:46Z"
+  },
+  {
+    "payload_id": "MB-3d9addd4ad4a",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-17",
+    "kwh": 687.5,
+    "sent_at": "2026-07-17T20:06:11Z"
+  },
+  {
+    "payload_id": "SE-5e5ccfa86c6c",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-17",
+    "kwh": 887.5,
+    "sent_at": "2026-07-17T20:06:22Z"
+  },
+  {
+    "payload_id": "FS-71d24e8e3d2f",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-17",
+    "kwh": 214.5,
+    "sent_at": "2026-07-17T20:07:19Z"
+  },
+  {
+    "payload_id": "FS-76275e62bdf4",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-17",
+    "kwh": 308.5,
+    "sent_at": "2026-07-17T20:07:26Z"
+  },
+  {
+    "payload_id": "MB-6be6c7a85f37",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-17",
+    "kwh": 223.25,
+    "sent_at": "2026-07-17T20:07:35Z"
+  },
+  {
+    "payload_id": "FS-051c4f43fe8c",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-17",
+    "kwh": 632.75,
+    "sent_at": "2026-07-17T20:09:53Z"
+  },
+  {
+    "payload_id": "FS-faa35056178f",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-17",
+    "kwh": 608.5,
+    "sent_at": "2026-07-17T20:11:44Z"
+  },
+  {
+    "payload_id": "MB-83a3eba5aca8",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-18",
+    "kwh": 1669.5,
+    "sent_at": "2026-07-18T20:02:19Z"
+  },
+  {
+    "payload_id": "SE-82c8e7d49afc",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-18",
+    "kwh": 647.5,
+    "sent_at": "2026-07-18T20:02:28Z"
+  },
+  {
+    "payload_id": "SE-0338b69cb620",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-18",
+    "kwh": 595.25,
+    "sent_at": "2026-07-18T20:02:52Z"
+  },
+  {
+    "payload_id": "SE-4ae7fee71465",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-18",
+    "kwh": 855.5,
+    "sent_at": "2026-07-18T20:04:23Z"
+  },
+  {
+    "payload_id": "MB-0172cabdcfc8",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-18",
+    "kwh": 1025.25,
+    "sent_at": "2026-07-18T20:04:27Z"
+  },
+  {
+    "payload_id": "SE-159bbea8f4e9",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-18",
+    "kwh": 776.25,
+    "sent_at": "2026-07-18T20:04:34Z"
+  },
+  {
+    "payload_id": "SE-7331ec294ee9",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-18",
+    "kwh": 804.25,
+    "sent_at": "2026-07-18T20:06:21Z"
+  },
+  {
+    "payload_id": "MB-4d73d344188f",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-18",
+    "kwh": 609.25,
+    "sent_at": "2026-07-18T20:06:41Z"
+  },
+  {
+    "payload_id": "MB-545f10568c9c",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-18",
+    "kwh": 245.25,
+    "sent_at": "2026-07-18T20:07:14Z"
+  },
+  {
+    "payload_id": "FS-98fa0cee443c",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-18",
+    "kwh": 200.25,
+    "sent_at": "2026-07-18T20:07:15Z"
+  },
+  {
+    "payload_id": "FS-42f1ee6e85a8",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-18",
+    "kwh": 292.5,
+    "sent_at": "2026-07-18T20:07:42Z"
+  },
+  {
+    "payload_id": "FS-e598f012bd34",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-18",
+    "kwh": 609,
+    "sent_at": "2026-07-18T20:09:35Z"
+  },
+  {
+    "payload_id": "FS-776c33e6dec8",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-18",
+    "kwh": 605.25,
+    "sent_at": "2026-07-18T20:11:19Z"
+  },
+  {
+    "payload_id": "SE-001e2d340738",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-19",
+    "kwh": 742,
+    "sent_at": "2026-07-19T20:02:13Z"
+  },
+  {
+    "payload_id": "SE-4d13ddab0c4c",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-19",
+    "kwh": 668.75,
+    "sent_at": "2026-07-19T20:02:28Z"
+  },
+  {
+    "payload_id": "MB-f3c55a33a8f9",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-19",
+    "kwh": 1816.5,
+    "sent_at": "2026-07-19T20:02:36Z"
+  },
+  {
+    "payload_id": "SE-93ec01edea4c",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-19",
+    "kwh": 1042.5,
+    "sent_at": "2026-07-19T20:04:10Z"
+  },
+  {
+    "payload_id": "MB-77e7868caad2",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-19",
+    "kwh": 1193.5,
+    "sent_at": "2026-07-19T20:04:19Z"
+  },
+  {
+    "payload_id": "SE-7b0475a2034b",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-19",
+    "kwh": 909.75,
+    "sent_at": "2026-07-19T20:04:21Z"
+  },
+  {
+    "payload_id": "MB-aa4a1214289a",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-19",
+    "kwh": 733.25,
+    "sent_at": "2026-07-19T20:06:31Z"
+  },
+  {
+    "payload_id": "SE-8d04b5c852c5",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-19",
+    "kwh": 977,
+    "sent_at": "2026-07-19T20:06:53Z"
+  },
+  {
+    "payload_id": "FS-727905b52b55",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-19",
+    "kwh": 224,
+    "sent_at": "2026-07-19T20:07:15Z"
+  },
+  {
+    "payload_id": "MB-d86fc6a70a0f",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-19",
+    "kwh": 152,
+    "sent_at": "2026-07-19T20:07:18Z"
+  },
+  {
+    "payload_id": "FS-b421ec4564bd",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-19",
+    "kwh": 329.75,
+    "sent_at": "2026-07-19T20:07:32Z"
+  },
+  {
+    "payload_id": "FS-24d94b4cd71c",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-19",
+    "kwh": 660.25,
+    "sent_at": "2026-07-19T20:09:27Z"
+  },
+  {
+    "payload_id": "FS-cb0adb776e60",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-19",
+    "kwh": 638.75,
+    "sent_at": "2026-07-19T20:11:31Z"
+  },
+  {
+    "payload_id": "SE-59c01df3b79e",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-20",
+    "kwh": 687.75,
+    "sent_at": "2026-07-20T20:02:11Z"
+  },
+  {
+    "payload_id": "SE-2ed3ce3c5558",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-20",
+    "kwh": 633,
+    "sent_at": "2026-07-20T20:02:44Z"
+  },
+  {
+    "payload_id": "MB-15abb046a80a",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-20",
+    "kwh": 1645,
+    "sent_at": "2026-07-20T20:02:46Z"
+  },
+  {
+    "payload_id": "SE-f55828aedf94",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-20",
+    "kwh": 908.25,
+    "sent_at": "2026-07-20T20:04:12Z"
+  },
+  {
+    "payload_id": "MB-10c9b774af40",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-20",
+    "kwh": 1242.75,
+    "sent_at": "2026-07-20T20:04:23Z"
+  },
+  {
+    "payload_id": "SE-bf94e30f9cff",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-20",
+    "kwh": 804,
+    "sent_at": "2026-07-20T20:04:28Z"
+  },
+  {
+    "payload_id": "SE-31271f31dc2d",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-20",
+    "kwh": 908.25,
+    "sent_at": "2026-07-20T20:05:40Z"
+  },
+  {
+    "payload_id": "SE-9529007788f6",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-20",
+    "kwh": 804,
+    "sent_at": "2026-07-20T20:05:56Z"
+  },
+  {
+    "payload_id": "SE-909e85631316",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-20",
+    "kwh": 882.5,
+    "sent_at": "2026-07-20T20:06:19Z"
+  },
+  {
+    "payload_id": "MB-e8ba1f51cbf5",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-20",
+    "kwh": 657.75,
+    "sent_at": "2026-07-20T20:06:49Z"
+  },
+  {
+    "payload_id": "FS-c29269e9e541",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-20",
+    "kwh": 189.25,
+    "sent_at": "2026-07-20T20:07:38Z"
+  },
+  {
+    "payload_id": "FS-4e643d1a206c",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-20",
+    "kwh": 298.25,
+    "sent_at": "2026-07-20T20:07:48Z"
+  },
+  {
+    "payload_id": "MB-d35646dabefc",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-20",
+    "kwh": 216.5,
+    "sent_at": "2026-07-20T20:07:53Z"
+  },
+  {
+    "payload_id": "FS-8ad2491399ad",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-20",
+    "kwh": 624.75,
+    "sent_at": "2026-07-20T20:09:44Z"
+  },
+  {
+    "payload_id": "FS-4502060097ed",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-20",
+    "kwh": 590,
+    "sent_at": "2026-07-20T20:11:16Z"
+  },
+  {
+    "payload_id": "MB-24d4a04ef408",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-21",
+    "kwh": 1565,
+    "sent_at": "2026-07-21T20:02:16Z"
+  },
+  {
+    "payload_id": "SE-5b35985cd1de",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-21",
+    "kwh": 607.25,
+    "sent_at": "2026-07-21T20:02:17Z"
+  },
+  {
+    "payload_id": "SE-aa65942df745",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-21",
+    "kwh": 629.25,
+    "sent_at": "2026-07-21T20:02:17Z"
+  },
+  {
+    "payload_id": "SE-99386786ac16",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-21",
+    "kwh": 851.5,
+    "sent_at": "2026-07-21T20:04:12Z"
+  },
+  {
+    "payload_id": "SE-bc0f40dcaddd",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-21",
+    "kwh": 743,
+    "sent_at": "2026-07-21T20:04:12Z"
+  },
+  {
+    "payload_id": "MB-55683a2f2d3a",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-21",
+    "kwh": 992.75,
+    "sent_at": "2026-07-21T20:04:24Z"
+  },
+  {
+    "payload_id": "SE-db78e7e805c3",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-21",
+    "kwh": 851.5,
+    "sent_at": "2026-07-21T20:05:40Z"
+  },
+  {
+    "payload_id": "SE-fac2f8dbeeac",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-21",
+    "kwh": 743,
+    "sent_at": "2026-07-21T20:05:40Z"
+  },
+  {
+    "payload_id": "MB-0d72ddaa31f8",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-21",
+    "kwh": 620.75,
+    "sent_at": "2026-07-21T20:06:18Z"
+  },
+  {
+    "payload_id": "SE-67382893f951",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-21",
+    "kwh": 804.75,
+    "sent_at": "2026-07-21T20:06:52Z"
+  },
+  {
+    "payload_id": "MB-4c8ecc3b032f",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-21",
+    "kwh": 182.75,
+    "sent_at": "2026-07-21T20:07:16Z"
+  },
+  {
+    "payload_id": "FS-e43b54ac2530",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-21",
+    "kwh": 195.25,
+    "sent_at": "2026-07-21T20:07:24Z"
+  },
+  {
+    "payload_id": "FS-3698d0bc8258",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-21",
+    "kwh": 281.25,
+    "sent_at": "2026-07-21T20:07:35Z"
+  },
+  {
+    "payload_id": "FS-d51acb995261",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-21",
+    "kwh": 593.25,
+    "sent_at": "2026-07-21T20:09:28Z"
+  },
+  {
+    "payload_id": "FS-affef1b68b1a",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-21",
+    "kwh": 578,
+    "sent_at": "2026-07-21T20:11:49Z"
+  },
+  {
+    "payload_id": "MB-e2c9b460ec5d",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-22",
+    "kwh": 1493,
+    "sent_at": "2026-07-22T20:02:36Z"
+  },
+  {
+    "payload_id": "SE-8341ed15793a",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-22",
+    "kwh": 576.75,
+    "sent_at": "2026-07-22T20:02:38Z"
+  },
+  {
+    "payload_id": "SE-7c2e2942d560",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-22",
+    "kwh": 597.5,
+    "sent_at": "2026-07-22T20:02:50Z"
+  },
+  {
+    "payload_id": "MB-e354e8b0ab3e",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-22",
+    "kwh": 902.25,
+    "sent_at": "2026-07-22T20:04:12Z"
+  },
+  {
+    "payload_id": "SE-67ce4b7cb9f7",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-22",
+    "kwh": 691.75,
+    "sent_at": "2026-07-22T20:04:15Z"
+  },
+  {
+    "payload_id": "SE-e88868ea6add",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-22",
+    "kwh": 710,
+    "sent_at": "2026-07-22T20:04:38Z"
+  },
+  {
+    "payload_id": "SE-08dcbc5e9522",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-22",
+    "kwh": 691.75,
+    "sent_at": "2026-07-22T20:05:43Z"
+  },
+  {
+    "payload_id": "SE-fd51d31bd1bb",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-22",
+    "kwh": 710,
+    "sent_at": "2026-07-22T20:06:06Z"
+  },
+  {
+    "payload_id": "MB-b678578589f3",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-22",
+    "kwh": 647.5,
+    "sent_at": "2026-07-22T20:06:34Z"
+  },
+  {
+    "payload_id": "SE-909afbabe9b8",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-22",
+    "kwh": 691.5,
+    "sent_at": "2026-07-22T20:06:50Z"
+  },
+  {
+    "payload_id": "MB-14b308f0ef24",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-22",
+    "kwh": 205.25,
+    "sent_at": "2026-07-22T20:07:23Z"
+  },
+  {
+    "payload_id": "FS-312fc86a8ebf",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-22",
+    "kwh": 262.75,
+    "sent_at": "2026-07-22T20:07:34Z"
+  },
+  {
+    "payload_id": "FS-a662939821a4",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-22",
+    "kwh": 165,
+    "sent_at": "2026-07-22T20:07:49Z"
+  },
+  {
+    "payload_id": "FS-9fa23c183c3a",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-22",
+    "kwh": 532.75,
+    "sent_at": "2026-07-22T20:09:23Z"
+  },
+  {
+    "payload_id": "FS-ee454ec45643",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-22",
+    "kwh": 540.75,
+    "sent_at": "2026-07-22T20:11:29Z"
+  },
+  {
+    "payload_id": "MB-d180707a7b6d",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-23",
+    "kwh": 1700,
+    "sent_at": "2026-07-23T20:02:15Z"
+  },
+  {
+    "payload_id": "SE-ec2d4f9de88a",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-23",
+    "kwh": 724.25,
+    "sent_at": "2026-07-23T20:02:29Z"
+  },
+  {
+    "payload_id": "SE-df1dc16951be",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-23",
+    "kwh": 635,
+    "sent_at": "2026-07-23T20:02:36Z"
+  },
+  {
+    "payload_id": "SE-202ed2fa5ce8",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-23",
+    "kwh": 785.75,
+    "sent_at": "2026-07-23T20:04:17Z"
+  },
+  {
+    "payload_id": "MB-89de08d76c45",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-23",
+    "kwh": 1212.25,
+    "sent_at": "2026-07-23T20:04:27Z"
+  },
+  {
+    "payload_id": "SE-1942185cc93f",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-23",
+    "kwh": 902.5,
+    "sent_at": "2026-07-23T20:04:38Z"
+  },
+  {
+    "payload_id": "SE-082e78e56494",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-23",
+    "kwh": 785.75,
+    "sent_at": "2026-07-23T20:05:45Z"
+  },
+  {
+    "payload_id": "SE-3e00320cc53e",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-23",
+    "kwh": 902.5,
+    "sent_at": "2026-07-23T20:06:06Z"
+  },
+  {
+    "payload_id": "MB-e45d89185f12",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-23",
+    "kwh": 654,
+    "sent_at": "2026-07-23T20:06:34Z"
+  },
+  {
+    "payload_id": "SE-8747d520039b",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-23",
+    "kwh": 857.75,
+    "sent_at": "2026-07-23T20:06:44Z"
+  },
+  {
+    "payload_id": "FS-9145cace18b5",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-23",
+    "kwh": 295.25,
+    "sent_at": "2026-07-23T20:07:14Z"
+  },
+  {
+    "payload_id": "MB-b8c76faf5dd3",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-23",
+    "kwh": 198,
+    "sent_at": "2026-07-23T20:07:26Z"
+  },
+  {
+    "payload_id": "FS-45e5d8fa115c",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-23",
+    "kwh": 207,
+    "sent_at": "2026-07-23T20:07:41Z"
+  },
+  {
+    "payload_id": "FS-476691a4f700",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-23",
+    "kwh": 596.25,
+    "sent_at": "2026-07-23T20:09:16Z"
+  },
+  {
+    "payload_id": "FS-8cb283cb604b",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-23",
+    "kwh": 579,
+    "sent_at": "2026-07-23T20:11:31Z"
+  },
+  {
+    "payload_id": "MB-ba6cff99509a",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-24",
+    "kwh": 1609,
+    "sent_at": "2026-07-24T20:02:36Z"
+  },
+  {
+    "payload_id": "SE-16b1fc2ed26c",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-24",
+    "kwh": 667,
+    "sent_at": "2026-07-24T20:02:40Z"
+  },
+  {
+    "payload_id": "SE-c99b92c45b7f",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-24",
+    "kwh": 687.25,
+    "sent_at": "2026-07-24T20:02:49Z"
+  },
+  {
+    "payload_id": "MB-9b2f9f2837e7",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-24",
+    "kwh": 1205.25,
+    "sent_at": "2026-07-24T20:04:29Z"
+  },
+  {
+    "payload_id": "SE-78b284de1762",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-24",
+    "kwh": 827.5,
+    "sent_at": "2026-07-24T20:04:30Z"
+  },
+  {
+    "payload_id": "SE-2f2a4fe98ed8",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-24",
+    "kwh": 950.75,
+    "sent_at": "2026-07-24T20:04:48Z"
+  },
+  {
+    "payload_id": "SE-787023aaa325",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-24",
+    "kwh": 827.5,
+    "sent_at": "2026-07-24T20:05:58Z"
+  },
+  {
+    "payload_id": "SE-b9074ddea772",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-24",
+    "kwh": 877.25,
+    "sent_at": "2026-07-24T20:06:12Z"
+  },
+  {
+    "payload_id": "MB-b1608031bf9d",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-24",
+    "kwh": 739.25,
+    "sent_at": "2026-07-24T20:06:16Z"
+  },
+  {
+    "payload_id": "SE-1afe48f8cf6e",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-24",
+    "kwh": 950.75,
+    "sent_at": "2026-07-24T20:06:16Z"
+  },
+  {
+    "payload_id": "MB-b8fb49126edb",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-24",
+    "kwh": 249.75,
+    "sent_at": "2026-07-24T20:07:18Z"
+  },
+  {
+    "payload_id": "FS-a3a34890301d",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-24",
+    "kwh": 322.5,
+    "sent_at": "2026-07-24T20:07:42Z"
+  },
+  {
+    "payload_id": "FS-6fff94f714ec",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-24",
+    "kwh": 207.25,
+    "sent_at": "2026-07-24T20:07:44Z"
+  },
+  {
+    "payload_id": "FS-df7bd64d88c5",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-24",
+    "kwh": 639,
+    "sent_at": "2026-07-24T20:09:36Z"
+  },
+  {
+    "payload_id": "FS-5c80ba1ff1d5",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-24",
+    "kwh": 596.75,
+    "sent_at": "2026-07-24T20:11:37Z"
+  },
+  {
+    "payload_id": "MB-42e194adb304",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-25",
+    "kwh": 1685.25,
+    "sent_at": "2026-07-25T20:02:40Z"
+  },
+  {
+    "payload_id": "SE-2c4596451065",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-25",
+    "kwh": 680.5,
+    "sent_at": "2026-07-25T20:02:41Z"
+  },
+  {
+    "payload_id": "SE-468b4933363a",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-25",
+    "kwh": 631.25,
+    "sent_at": "2026-07-25T20:02:45Z"
+  },
+  {
+    "payload_id": "MB-96509a62fc44",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-25",
+    "kwh": 1124,
+    "sent_at": "2026-07-25T20:04:22Z"
+  },
+  {
+    "payload_id": "SE-89be4b8c212c",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-25",
+    "kwh": 898.75,
+    "sent_at": "2026-07-25T20:04:38Z"
+  },
+  {
+    "payload_id": "SE-21a415b0bedd",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-25",
+    "kwh": 785.75,
+    "sent_at": "2026-07-25T20:04:45Z"
+  },
+  {
+    "payload_id": "SE-8cfe6fbf2471",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-25",
+    "kwh": 843,
+    "sent_at": "2026-07-25T20:06:15Z"
+  },
+  {
+    "payload_id": "MB-6b31e7d284b4",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-25",
+    "kwh": 743.25,
+    "sent_at": "2026-07-25T20:06:49Z"
+  },
+  {
+    "payload_id": "FS-29fdc8a8df78",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-25",
+    "kwh": 291,
+    "sent_at": "2026-07-25T20:07:20Z"
+  },
+  {
+    "payload_id": "FS-411f57ba595f",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-25",
+    "kwh": 205.75,
+    "sent_at": "2026-07-25T20:07:36Z"
+  },
+  {
+    "payload_id": "MB-4108eb08082f",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-25",
+    "kwh": 157.5,
+    "sent_at": "2026-07-25T20:07:52Z"
+  },
+  {
+    "payload_id": "FS-625333046b8c",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-25",
+    "kwh": 622.5,
+    "sent_at": "2026-07-25T20:09:50Z"
+  },
+  {
+    "payload_id": "FS-bc5fc2e1db23",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-25",
+    "kwh": 578.5,
+    "sent_at": "2026-07-25T20:11:54Z"
+  },
+  {
+    "payload_id": "SE-70ae034bbb1e",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-26",
+    "kwh": 697.5,
+    "sent_at": "2026-07-26T20:02:12Z"
+  },
+  {
+    "payload_id": "MB-7b690656743f",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-26",
+    "kwh": 1869,
+    "sent_at": "2026-07-26T20:02:25Z"
+  },
+  {
+    "payload_id": "SE-56a45e94575f",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-26",
+    "kwh": 740,
+    "sent_at": "2026-07-26T20:02:36Z"
+  },
+  {
+    "payload_id": "MB-9b546eee3809",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-26",
+    "kwh": 1346,
+    "sent_at": "2026-07-26T20:04:13Z"
+  },
+  {
+    "payload_id": "SE-e0839e3c04d1",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-26",
+    "kwh": 912.75,
+    "sent_at": "2026-07-26T20:04:33Z"
+  },
+  {
+    "payload_id": "SE-dfdab4c82122",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-26",
+    "kwh": 980.5,
+    "sent_at": "2026-07-26T20:04:37Z"
+  },
+  {
+    "payload_id": "SE-6e75234eca54",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-26",
+    "kwh": 966.5,
+    "sent_at": "2026-07-26T20:06:10Z"
+  },
+  {
+    "payload_id": "MB-f422f215185c",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-26",
+    "kwh": 816.25,
+    "sent_at": "2026-07-26T20:06:51Z"
+  },
+  {
+    "payload_id": "FS-2e9a6a4103e1",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-26",
+    "kwh": 334.75,
+    "sent_at": "2026-07-26T20:07:23Z"
+  },
+  {
+    "payload_id": "FS-8d169d3171df",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-26",
+    "kwh": 221.5,
+    "sent_at": "2026-07-26T20:07:28Z"
+  },
+  {
+    "payload_id": "MB-af818dbc329d",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-26",
+    "kwh": 172.25,
+    "sent_at": "2026-07-26T20:07:50Z"
+  },
+  {
+    "payload_id": "FS-92017919fb75",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-26",
+    "kwh": 648.5,
+    "sent_at": "2026-07-26T20:09:20Z"
+  },
+  {
+    "payload_id": "FS-9adbd7b68e96",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-26",
+    "kwh": 656.5,
+    "sent_at": "2026-07-26T20:11:33Z"
+  },
+  {
+    "payload_id": "SE-4fdb1a903812",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-27",
+    "kwh": 731.5,
+    "sent_at": "2026-07-27T20:02:19Z"
+  },
+  {
+    "payload_id": "MB-98efcea12e26",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-27",
+    "kwh": 1684.75,
+    "sent_at": "2026-07-27T20:02:34Z"
+  },
+  {
+    "payload_id": "SE-afa22e321e2d",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-27",
+    "kwh": 657.25,
+    "sent_at": "2026-07-27T20:02:36Z"
+  },
+  {
+    "payload_id": "MB-23b3053935ef",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-27",
+    "kwh": 1276.75,
+    "sent_at": "2026-07-27T20:04:20Z"
+  },
+  {
+    "payload_id": "SE-6a4f14b358d1",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-27",
+    "kwh": 984.25,
+    "sent_at": "2026-07-27T20:04:21Z"
+  },
+  {
+    "payload_id": "SE-ae777cce15b5",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-27",
+    "kwh": 858.25,
+    "sent_at": "2026-07-27T20:04:38Z"
+  },
+  {
+    "payload_id": "SE-a1191cbac745",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-27",
+    "kwh": 945.5,
+    "sent_at": "2026-07-27T20:06:16Z"
+  },
+  {
+    "payload_id": "MB-1ff6f586c178",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-27",
+    "kwh": 685,
+    "sent_at": "2026-07-27T20:06:26Z"
+  },
+  {
+    "payload_id": "MB-facfc178a721",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-27",
+    "kwh": 243.75,
+    "sent_at": "2026-07-27T20:07:14Z"
+  },
+  {
+    "payload_id": "FS-0e3af4f6a402",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN40-77412",
+    "kind": "production",
+    "reading_date": "2026-07-27",
+    "kwh": 218.5,
+    "sent_at": "2026-07-27T20:07:20Z"
+  },
+  {
+    "payload_id": "FS-b54a60c926f4",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-27",
+    "kwh": 328,
+    "sent_at": "2026-07-27T20:07:24Z"
+  },
+  {
+    "payload_id": "FS-ccba1a4a25de",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-27",
+    "kwh": 623,
+    "sent_at": "2026-07-27T20:09:27Z"
+  },
+  {
+    "payload_id": "FS-76505bc9a07d",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-27",
+    "kwh": 642,
+    "sent_at": "2026-07-27T20:11:37Z"
+  },
+  {
+    "payload_id": "MB-4976139a282b",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-28",
+    "kwh": 1660.25,
+    "sent_at": "2026-07-28T20:02:12Z"
+  },
+  {
+    "payload_id": "SE-0108a7f0cdee",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-28",
+    "kwh": 627.25,
+    "sent_at": "2026-07-28T20:02:17Z"
+  },
+  {
+    "payload_id": "SE-76668300b059",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-28",
+    "kwh": 720,
+    "sent_at": "2026-07-28T20:02:37Z"
+  },
+  {
+    "payload_id": "SE-5ed14cc1e68d",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-28",
+    "kwh": 874.75,
+    "sent_at": "2026-07-28T20:04:30Z"
+  },
+  {
+    "payload_id": "MB-73382f359354",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-28",
+    "kwh": 1018.5,
+    "sent_at": "2026-07-28T20:04:37Z"
+  },
+  {
+    "payload_id": "SE-dbc79c1d91ea",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-28",
+    "kwh": 826.5,
+    "sent_at": "2026-07-28T20:04:37Z"
+  },
+  {
+    "payload_id": "MB-9ff36c11be96",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-28",
+    "kwh": 750,
+    "sent_at": "2026-07-28T20:06:11Z"
+  },
+  {
+    "payload_id": "SE-730cae6ee589",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-28",
+    "kwh": 873.5,
+    "sent_at": "2026-07-28T20:06:54Z"
+  },
+  {
+    "payload_id": "FS-7f3dcd56e56b",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-28",
+    "kwh": 327.75,
+    "sent_at": "2026-07-28T20:07:21Z"
+  },
+  {
+    "payload_id": "MB-18346a42c3dd",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-28",
+    "kwh": 236,
+    "sent_at": "2026-07-28T20:07:40Z"
+  },
+  {
+    "payload_id": "FS-0d2c671bcf06",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-28",
+    "kwh": 587.75,
+    "sent_at": "2026-07-28T20:09:51Z"
+  },
+  {
+    "payload_id": "FS-357febe1c96d",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-28",
+    "kwh": 588.25,
+    "sent_at": "2026-07-28T20:11:35Z"
+  },
+  {
+    "payload_id": "SE-3e21b7a348e8",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71504",
+    "kind": "production",
+    "reading_date": "2026-07-29",
+    "kwh": 629.5,
+    "sent_at": "2026-07-29T20:02:14Z"
+  },
+  {
+    "payload_id": "MB-c0bfc5e5ec4d",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20415",
+    "kind": "consumption",
+    "reading_date": "2026-07-29",
+    "kwh": 1514.5,
+    "sent_at": "2026-07-29T20:02:28Z"
+  },
+  {
+    "payload_id": "SE-3def4588465b",
+    "vendor": "solaredge",
+    "external_id": "SO-SE120K-71503",
+    "kind": "production",
+    "reading_date": "2026-07-29",
+    "kwh": 684.25,
+    "sent_at": "2026-07-29T20:02:28Z"
+  },
+  {
+    "payload_id": "SE-b0a7c62b55b5",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88231",
+    "kind": "production",
+    "reading_date": "2026-07-29",
+    "kwh": 896.5,
+    "sent_at": "2026-07-29T20:04:18Z"
+  },
+  {
+    "payload_id": "MB-a7e3b8c08557",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20114",
+    "kind": "consumption",
+    "reading_date": "2026-07-29",
+    "kwh": 1048.75,
+    "sent_at": "2026-07-29T20:04:20Z"
+  },
+  {
+    "payload_id": "SE-6e2505da18f3",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-88232",
+    "kind": "production",
+    "reading_date": "2026-07-29",
+    "kwh": 809.75,
+    "sent_at": "2026-07-29T20:04:30Z"
+  },
+  {
+    "payload_id": "MB-c99cbfe4f5d1",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20733",
+    "kind": "consumption",
+    "reading_date": "2026-07-29",
+    "kwh": 714.75,
+    "sent_at": "2026-07-29T20:06:26Z"
+  },
+  {
+    "payload_id": "SE-883d2b3d928f",
+    "vendor": "solaredge",
+    "external_id": "SO-SE160K-90144",
+    "kind": "production",
+    "reading_date": "2026-07-29",
+    "kwh": 836.25,
+    "sent_at": "2026-07-29T20:06:49Z"
+  },
+  {
+    "payload_id": "MB-c1a791ea03eb",
+    "vendor": "modbus_bridge",
+    "external_id": "MO-ACU2-20612",
+    "kind": "consumption",
+    "reading_date": "2026-07-29",
+    "kwh": 230,
+    "sent_at": "2026-07-29T20:07:12Z"
+  },
+  {
+    "payload_id": "FS-eae735b5080f",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN60-44120",
+    "kind": "production",
+    "reading_date": "2026-07-29",
+    "kwh": 331.5,
+    "sent_at": "2026-07-29T20:07:31Z"
+  },
+  {
+    "payload_id": "FS-f9e1293ad8df",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58201",
+    "kind": "production",
+    "reading_date": "2026-07-29",
+    "kwh": 589.75,
+    "sent_at": "2026-07-29T20:09:30Z"
+  },
+  {
+    "payload_id": "FS-22cfea184467",
+    "vendor": "fusionsolar",
+    "external_id": "FU-SUN100-58455",
+    "kind": "production",
+    "reading_date": "2026-07-29",
+    "kwh": 579.25,
+    "sent_at": "2026-07-29T20:11:17Z"
+  }
+]

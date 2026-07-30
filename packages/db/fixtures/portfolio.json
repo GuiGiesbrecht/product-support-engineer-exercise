@@ -1,0 +1,647 @@
+{
+  "customers": [
+    {
+      "key": "albion",
+      "name": "Albion Logistics Ltd",
+      "billing_email": "accounts@albionlogistics.co.uk",
+      "created_at": "2025-04-02T09:14:00Z"
+    },
+    {
+      "key": "northgate",
+      "name": "Northgate Education Trust",
+      "billing_email": "finance@northgate-education.org.uk",
+      "created_at": "2025-05-19T10:30:00Z"
+    },
+    {
+      "key": "pennine",
+      "name": "Pennine Group plc",
+      "billing_email": "ap@penninegroup.co.uk",
+      "created_at": "2025-05-02T14:05:00Z"
+    }
+  ],
+  "users": [
+    {
+      "email": "support@metris.energy",
+      "full_name": "Sofia Marchetti",
+      "role": "staff_support",
+      "customer_key": null,
+      "last_login_at": "2026-07-29T16:42:11Z",
+      "password_hash": "$2a$10$JoVbQrsTaPLDtmLSL0B5cevw/PRtYK1jKp08MUCm4n3.j4qH.VrUm"
+    },
+    {
+      "email": "ops@metris.energy",
+      "full_name": "Daniel Okafor",
+      "role": "staff_ops",
+      "customer_key": null,
+      "last_login_at": "2026-07-28T08:15:03Z",
+      "password_hash": "$2a$10$JoVbQrsTaPLDtmLSL0B5cevw/PRtYK1jKp08MUCm4n3.j4qH.VrUm"
+    },
+    {
+      "email": "engineering@metris.energy",
+      "full_name": "Marcus Webb",
+      "role": "staff_ops",
+      "customer_key": null,
+      "last_login_at": "2026-07-27T05:36:48Z",
+      "password_hash": "$2a$10$JoVbQrsTaPLDtmLSL0B5cevw/PRtYK1jKp08MUCm4n3.j4qH.VrUm"
+    },
+    {
+      "email": "finance@albionlogistics.co.uk",
+      "full_name": "Priya Nair",
+      "role": "customer_admin",
+      "customer_key": "albion",
+      "last_login_at": "2026-07-29T14:21:37Z",
+      "password_hash": "$2a$10$JoVbQrsTaPLDtmLSL0B5cevw/PRtYK1jKp08MUCm4n3.j4qH.VrUm"
+    },
+    {
+      "email": "estates@northgate-education.org.uk",
+      "full_name": "Tom Whitfield",
+      "role": "customer_admin",
+      "customer_key": "northgate",
+      "last_login_at": "2026-07-29T07:58:20Z",
+      "password_hash": "$2a$10$JoVbQrsTaPLDtmLSL0B5cevw/PRtYK1jKp08MUCm4n3.j4qH.VrUm"
+    },
+    {
+      "email": "energy@penninegroup.co.uk",
+      "full_name": "Rachel Donnelly",
+      "role": "customer_admin",
+      "customer_key": "pennine",
+      "last_login_at": "2026-07-28T11:04:52Z",
+      "password_hash": "$2a$10$JoVbQrsTaPLDtmLSL0B5cevw/PRtYK1jKp08MUCm4n3.j4qH.VrUm"
+    }
+  ],
+  "sites": [
+    {
+      "slug": "london-warehouse",
+      "customer_key": "albion",
+      "name": "London Warehouse",
+      "city": "London",
+      "capacity_kwp": 320,
+      "commissioned_at": "2025-04-17"
+    },
+    {
+      "slug": "school-bristol",
+      "customer_key": "northgate",
+      "name": "School Bristol",
+      "city": "Bristol",
+      "capacity_kwp": 100,
+      "commissioned_at": "2025-06-05"
+    },
+    {
+      "slug": "factory-manchester",
+      "customer_key": "pennine",
+      "name": "Factory Manchester",
+      "city": "Manchester",
+      "capacity_kwp": 250,
+      "commissioned_at": "2025-05-20"
+    },
+    {
+      "slug": "leeds-depot",
+      "customer_key": "pennine",
+      "name": "Leeds Depot",
+      "city": "Leeds",
+      "capacity_kwp": 120,
+      "commissioned_at": "2025-09-12"
+    },
+    {
+      "slug": "brighton-retail-park",
+      "customer_key": "pennine",
+      "name": "Brighton Retail Park",
+      "city": "Brighton",
+      "capacity_kwp": 180,
+      "commissioned_at": "2025-08-01"
+    },
+    {
+      "slug": "glasgow-cold-storage",
+      "customer_key": "pennine",
+      "name": "Glasgow Cold Storage",
+      "city": "Glasgow",
+      "capacity_kwp": 140,
+      "commissioned_at": "2026-02-10"
+    }
+  ],
+  "assets": [
+    {
+      "serial": "SE160K-88231",
+      "site": "london-warehouse",
+      "type": "inverter",
+      "name": "Inverter 1",
+      "manufacturer": "SolarEdge",
+      "model": "SE160K",
+      "rated_power_kw": 160,
+      "installed_at": "2025-04-17"
+    },
+    {
+      "serial": "SE160K-88232",
+      "site": "london-warehouse",
+      "type": "inverter",
+      "name": "Inverter 2",
+      "manufacturer": "SolarEdge",
+      "model": "SE160K",
+      "rated_power_kw": 160,
+      "installed_at": "2025-04-17"
+    },
+    {
+      "serial": "ACU2-20114",
+      "site": "london-warehouse",
+      "type": "smart_meter",
+      "name": "Import Meter",
+      "manufacturer": "Accuenergy",
+      "model": "Acuvim II",
+      "rated_power_kw": null,
+      "installed_at": "2025-04-17"
+    },
+    {
+      "serial": "WXT-5382",
+      "site": "london-warehouse",
+      "type": "weather_station",
+      "name": "Roof Weather Station",
+      "manufacturer": "Vaisala",
+      "model": "WXT536",
+      "rated_power_kw": null,
+      "installed_at": "2025-04-20"
+    },
+    {
+      "serial": "SUN60-44120",
+      "site": "school-bristol",
+      "type": "inverter",
+      "name": "Inverter 1",
+      "manufacturer": "Huawei",
+      "model": "SUN2000-60KTL",
+      "rated_power_kw": 60,
+      "installed_at": "2025-06-05"
+    },
+    {
+      "serial": "SUN40-77412",
+      "site": "school-bristol",
+      "type": "inverter",
+      "name": "Inverter 2",
+      "manufacturer": "Huawei",
+      "model": "SUN2000-40KTL",
+      "rated_power_kw": 40,
+      "installed_at": "2025-06-05"
+    },
+    {
+      "serial": "ACU2-20612",
+      "site": "school-bristol",
+      "type": "smart_meter",
+      "name": "Main Meter",
+      "manufacturer": "Accuenergy",
+      "model": "Acuvim II",
+      "rated_power_kw": null,
+      "installed_at": "2025-06-05"
+    },
+    {
+      "serial": "WXT-5417",
+      "site": "school-bristol",
+      "type": "weather_station",
+      "name": "Weather Station",
+      "manufacturer": "Vaisala",
+      "model": "WXT536",
+      "rated_power_kw": null,
+      "installed_at": "2025-06-09"
+    },
+    {
+      "serial": "SE120K-71503",
+      "site": "factory-manchester",
+      "type": "inverter",
+      "name": "Inverter 1",
+      "manufacturer": "SolarEdge",
+      "model": "SE120K",
+      "rated_power_kw": 120,
+      "installed_at": "2025-05-20"
+    },
+    {
+      "serial": "SE120K-71504",
+      "site": "factory-manchester",
+      "type": "inverter",
+      "name": "Inverter 2",
+      "manufacturer": "SolarEdge",
+      "model": "SE120K",
+      "rated_power_kw": 120,
+      "installed_at": "2025-05-20"
+    },
+    {
+      "serial": "ACU2-20415",
+      "site": "factory-manchester",
+      "type": "smart_meter",
+      "name": "Import Meter",
+      "manufacturer": "Accuenergy",
+      "model": "Acuvim II",
+      "rated_power_kw": null,
+      "installed_at": "2025-05-20"
+    },
+    {
+      "serial": "WXT-5399",
+      "site": "factory-manchester",
+      "type": "weather_station",
+      "name": "Weather Station",
+      "manufacturer": "Vaisala",
+      "model": "WXT536",
+      "rated_power_kw": null,
+      "installed_at": "2025-05-23"
+    },
+    {
+      "serial": "SUN100-58201",
+      "site": "leeds-depot",
+      "type": "inverter",
+      "name": "Inverter 1",
+      "manufacturer": "Huawei",
+      "model": "SUN2000-100KTL",
+      "rated_power_kw": 100,
+      "installed_at": "2025-09-12"
+    },
+    {
+      "serial": "WXT-5461",
+      "site": "leeds-depot",
+      "type": "weather_station",
+      "name": "Weather Station",
+      "manufacturer": "Vaisala",
+      "model": "WXT536",
+      "rated_power_kw": null,
+      "installed_at": "2025-09-15"
+    },
+    {
+      "serial": "SE160K-90144",
+      "site": "brighton-retail-park",
+      "type": "inverter",
+      "name": "Inverter 1",
+      "manufacturer": "SolarEdge",
+      "model": "SE160K",
+      "rated_power_kw": 160,
+      "installed_at": "2025-08-01"
+    },
+    {
+      "serial": "ACU2-20733",
+      "site": "brighton-retail-park",
+      "type": "smart_meter",
+      "name": "Import Meter",
+      "manufacturer": "Accuenergy",
+      "model": "Acuvim II",
+      "rated_power_kw": null,
+      "installed_at": "2025-08-01"
+    },
+    {
+      "serial": "WXT-5478",
+      "site": "brighton-retail-park",
+      "type": "weather_station",
+      "name": "Weather Station",
+      "manufacturer": "Vaisala",
+      "model": "WXT536",
+      "rated_power_kw": null,
+      "installed_at": "2025-08-04"
+    },
+    {
+      "serial": "SUN100-58455",
+      "site": "glasgow-cold-storage",
+      "type": "inverter",
+      "name": "Inverter 1",
+      "manufacturer": "Huawei",
+      "model": "SUN2000-100KTL",
+      "rated_power_kw": 100,
+      "installed_at": "2026-02-10"
+    },
+    {
+      "serial": "PW3-30917",
+      "site": "glasgow-cold-storage",
+      "type": "battery",
+      "name": "Battery Bank",
+      "manufacturer": "Tesla",
+      "model": "Powerwall 3",
+      "rated_power_kw": 34,
+      "installed_at": "2026-02-10"
+    },
+    {
+      "serial": "WXT-5490",
+      "site": "glasgow-cold-storage",
+      "type": "weather_station",
+      "name": "Weather Station",
+      "manufacturer": "Vaisala",
+      "model": "WXT536",
+      "rated_power_kw": null,
+      "installed_at": "2026-02-12"
+    }
+  ],
+  "connector_assets": [
+    {
+      "asset_serial": "SE160K-88231",
+      "connector_vendor": "solaredge",
+      "external_id": "SO-SE160K-88231",
+      "firmware_version": "2.4.2",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-27T13:52:18Z",
+      "sync_state": "ok",
+      "config": {
+        "gateway": "SE-GW-2201",
+        "publish_mode": "daily_summary"
+      }
+    },
+    {
+      "asset_serial": "SE160K-88232",
+      "connector_vendor": "solaredge",
+      "external_id": "SO-SE160K-88232",
+      "firmware_version": "2.4.2",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-27T13:52:18Z",
+      "sync_state": "ok",
+      "config": {
+        "gateway": "SE-GW-2201",
+        "publish_mode": "daily_summary"
+      }
+    },
+    {
+      "asset_serial": "ACU2-20114",
+      "connector_vendor": "modbus_bridge",
+      "external_id": "MO-ACU2-20114",
+      "firmware_version": "1.9.0",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "WXT-5382",
+      "connector_vendor": "meteocontrol",
+      "external_id": "ME-WXT-5382",
+      "firmware_version": "5.2.1",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "SUN60-44120",
+      "connector_vendor": "fusionsolar",
+      "external_id": "FU-SUN60-44120",
+      "firmware_version": "V500R022C10",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "SUN40-77412",
+      "connector_vendor": "fusionsolar",
+      "external_id": "FU-SUN40-77412",
+      "firmware_version": "V500R022C10",
+      "last_seen_at": "2026-07-28T06:12:44Z",
+      "last_sync_at": "2026-07-28T06:12:44Z",
+      "sync_state": "error",
+      "config": {}
+    },
+    {
+      "asset_serial": "ACU2-20612",
+      "connector_vendor": "modbus_bridge",
+      "external_id": "MO-ACU2-20612",
+      "firmware_version": "1.9.0",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "WXT-5417",
+      "connector_vendor": "meteocontrol",
+      "external_id": "ME-WXT-5417",
+      "firmware_version": "5.2.1",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "SE120K-71503",
+      "connector_vendor": "solaredge",
+      "external_id": "SO-SE120K-71503",
+      "firmware_version": "2.4.2",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "SE120K-71504",
+      "connector_vendor": "solaredge",
+      "external_id": "SO-SE120K-71504",
+      "firmware_version": "2.4.2",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "ACU2-20415",
+      "connector_vendor": "modbus_bridge",
+      "external_id": "MO-ACU2-20415",
+      "firmware_version": "1.9.0",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "WXT-5399",
+      "connector_vendor": "meteocontrol",
+      "external_id": "ME-WXT-5399",
+      "firmware_version": "5.2.1",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "SUN100-58201",
+      "connector_vendor": "fusionsolar",
+      "external_id": "FU-SUN100-58201",
+      "firmware_version": "V500R022C10",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "WXT-5461",
+      "connector_vendor": "meteocontrol",
+      "external_id": "ME-WXT-5461",
+      "firmware_version": "5.2.1",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "SE160K-90144",
+      "connector_vendor": "solaredge",
+      "external_id": "SO-SE160K-90144",
+      "firmware_version": "2.4.2",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "ACU2-20733",
+      "connector_vendor": "modbus_bridge",
+      "external_id": "MO-ACU2-20733",
+      "firmware_version": "1.9.0",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "WXT-5478",
+      "connector_vendor": "meteocontrol",
+      "external_id": "ME-WXT-5478",
+      "firmware_version": "5.2.1",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "SUN100-58455",
+      "connector_vendor": "fusionsolar",
+      "external_id": "FU-SUN100-58455",
+      "firmware_version": "V500R022C10",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "PW3-30917",
+      "connector_vendor": "tesla",
+      "external_id": "TE-PW3-30917",
+      "firmware_version": "24.20.9",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    },
+    {
+      "asset_serial": "WXT-5490",
+      "connector_vendor": "meteocontrol",
+      "external_id": "ME-WXT-5490",
+      "firmware_version": "5.2.1",
+      "last_seen_at": "2026-07-29T20:14:31Z",
+      "last_sync_at": "2026-07-29T20:15:02Z",
+      "sync_state": "ok",
+      "config": {}
+    }
+  ],
+  "prices": [
+    {
+      "site": "london-warehouse",
+      "price_per_kwh": 0.2,
+      "valid_from": "2025-04-17",
+      "valid_to": "2025-12-31"
+    },
+    {
+      "site": "london-warehouse",
+      "price_per_kwh": 0.24,
+      "valid_from": "2026-01-01",
+      "valid_to": null
+    },
+    {
+      "site": "school-bristol",
+      "price_per_kwh": 0.24,
+      "valid_from": "2025-06-05",
+      "valid_to": null
+    },
+    {
+      "site": "factory-manchester",
+      "price_per_kwh": 0.24,
+      "valid_from": "2025-05-20",
+      "valid_to": "2025-12-31"
+    },
+    {
+      "site": "factory-manchester",
+      "price_per_kwh": 0.28,
+      "valid_from": "2026-01-01",
+      "valid_to": null
+    },
+    {
+      "site": "leeds-depot",
+      "price_per_kwh": 0.24,
+      "valid_from": "2025-09-12",
+      "valid_to": null
+    },
+    {
+      "site": "brighton-retail-park",
+      "price_per_kwh": 0.28,
+      "valid_from": "2025-08-01",
+      "valid_to": null
+    },
+    {
+      "site": "glasgow-cold-storage",
+      "price_per_kwh": 0.24,
+      "valid_from": "2026-02-10",
+      "valid_to": null
+    }
+  ],
+  "ppa_agreements": [
+    {
+      "site": "london-warehouse",
+      "counterparty": "Albion Logistics Ltd",
+      "rate_per_kwh": 0.08,
+      "start_date": "2025-04-17",
+      "end_date": "2035-04-16",
+      "status": "active",
+      "created_at": "2025-04-01T11:20:00Z"
+    },
+    {
+      "site": "school-bristol",
+      "counterparty": "Northgate Education Trust",
+      "rate_per_kwh": 0.12,
+      "start_date": "2025-06-05",
+      "end_date": "2040-06-04",
+      "status": "active",
+      "created_at": "2025-05-22T09:45:00Z"
+    },
+    {
+      "site": "factory-manchester",
+      "counterparty": "Pennine Group plc",
+      "rate_per_kwh": 0.12,
+      "start_date": "2025-07-01",
+      "end_date": "2026-06-30",
+      "status": "active",
+      "created_at": "2025-06-18T15:10:00Z"
+    },
+    {
+      "site": "leeds-depot",
+      "counterparty": "Pennine Group plc",
+      "rate_per_kwh": 0.08,
+      "start_date": "2025-09-12",
+      "end_date": "2026-06-30",
+      "status": "superseded",
+      "created_at": "2025-08-30T10:00:00Z"
+    },
+    {
+      "site": "leeds-depot",
+      "counterparty": "Pennine Group plc",
+      "rate_per_kwh": 0.08,
+      "start_date": "2026-07-01",
+      "end_date": "2031-06-30",
+      "status": "active",
+      "created_at": "2026-06-28T09:32:00Z"
+    },
+    {
+      "site": "brighton-retail-park",
+      "counterparty": "Pennine Group plc",
+      "rate_per_kwh": 0.12,
+      "start_date": "2025-08-01",
+      "end_date": "2035-07-31",
+      "status": "active",
+      "created_at": "2025-07-14T13:25:00Z"
+    },
+    {
+      "site": "glasgow-cold-storage",
+      "counterparty": "Pennine Group plc",
+      "rate_per_kwh": 0.08,
+      "start_date": "2026-02-10",
+      "end_date": "2036-02-09",
+      "status": "active",
+      "created_at": "2026-01-27T16:40:00Z"
+    }
+  ]
+}

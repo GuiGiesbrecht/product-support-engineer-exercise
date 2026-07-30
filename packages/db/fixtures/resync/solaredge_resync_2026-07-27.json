@@ -1,0 +1,74 @@
+{
+  "vendor": "solaredge",
+  "gateway": "SE-GW-2201",
+  "issued_at": "2026-07-27T13:47:09Z",
+  "reason": "Gateway firmware 2.4.1 published each daily energy summary twice between 2026-07-20 and 2026-07-24. This corrective re-sync retracts the duplicate transmissions.",
+  "firmware_update": {
+    "external_ids": ["SO-SE160K-88231", "SO-SE160K-88232"],
+    "from": "2.4.1",
+    "to": "2.4.2",
+    "applied_at": "2026-07-27T13:52:18Z"
+  },
+  "retracted_payloads": [
+    {
+      "payload_id": "SE-31271f31dc2d",
+      "external_id": "SO-SE160K-88231",
+      "reading_date": "2026-07-20",
+      "kwh": 908.25
+    },
+    {
+      "payload_id": "SE-9529007788f6",
+      "external_id": "SO-SE160K-88232",
+      "reading_date": "2026-07-20",
+      "kwh": 804
+    },
+    {
+      "payload_id": "SE-db78e7e805c3",
+      "external_id": "SO-SE160K-88231",
+      "reading_date": "2026-07-21",
+      "kwh": 851.5
+    },
+    {
+      "payload_id": "SE-fac2f8dbeeac",
+      "external_id": "SO-SE160K-88232",
+      "reading_date": "2026-07-21",
+      "kwh": 743
+    },
+    {
+      "payload_id": "SE-08dcbc5e9522",
+      "external_id": "SO-SE160K-88232",
+      "reading_date": "2026-07-22",
+      "kwh": 691.75
+    },
+    {
+      "payload_id": "SE-fd51d31bd1bb",
+      "external_id": "SO-SE160K-88231",
+      "reading_date": "2026-07-22",
+      "kwh": 710
+    },
+    {
+      "payload_id": "SE-082e78e56494",
+      "external_id": "SO-SE160K-88232",
+      "reading_date": "2026-07-23",
+      "kwh": 785.75
+    },
+    {
+      "payload_id": "SE-3e00320cc53e",
+      "external_id": "SO-SE160K-88231",
+      "reading_date": "2026-07-23",
+      "kwh": 902.5
+    },
+    {
+      "payload_id": "SE-787023aaa325",
+      "external_id": "SO-SE160K-88232",
+      "reading_date": "2026-07-24",
+      "kwh": 827.5
+    },
+    {
+      "payload_id": "SE-1afe48f8cf6e",
+      "external_id": "SO-SE160K-88231",
+      "reading_date": "2026-07-24",
+      "kwh": 950.75
+    }
+  ]
+}

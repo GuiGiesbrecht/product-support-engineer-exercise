@@ -1,0 +1,7 @@
+{
+  "name": "@metris/shared",
+  "version": "1.4.2",
+  "private": true,
+  "main": "src/index.js",
+  "license": "MIT"
+}

@@ -1,0 +1,75 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: metris
+      POSTGRES_PASSWORD: metris_dev
+      POSTGRES_DB: metris
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U metris -d metris']
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  db-setup:
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+    command: ['node', 'packages/db/scripts/setup.js']
+    environment:
+      DATABASE_URL: postgres://metris:metris_dev@db:5432/metris
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: 'no'
+
+  api:
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+    command: ['node', 'apps/api/src/index.js']
+    environment:
+      DATABASE_URL: postgres://metris:metris_dev@db:5432/metris
+      PORT: '4000'
+      WEB_ORIGIN: http://localhost:3000
+    ports:
+      - '4000:4000'
+    depends_on:
+      db:
+        condition: service_healthy
+      db-setup:
+        condition: service_completed_successfully
+
+  worker:
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+    command: ['node', 'apps/api/src/workers/index.js']
+    environment:
+      DATABASE_URL: postgres://metris:metris_dev@db:5432/metris
+      # Alert evaluation pages the on-call rota; keep it disabled outside production.
+      ALERTING_ENABLED: 'false'
+      # CONNECTOR_API_TOKEN is provisioned through the secrets manager in staging/production.
+    depends_on:
+      db:
+        condition: service_healthy
+      db-setup:
+        condition: service_completed_successfully
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/web.Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:4000
+    ports:
+      - '3000:3000'
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
