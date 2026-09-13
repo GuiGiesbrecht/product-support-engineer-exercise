@@ -30,15 +30,23 @@ module.exports = async function alertScan({ log }) {
       .first();
     if (existing) continue;
 
-    await db('alerts').insert({
-      site_id: connector.site_id,
-      asset_id: connector.asset_id,
-      type: ALERT_TYPES.ASSET_OFFLINE,
-      severity: 'critical',
-      status: 'open',
-      message: `No data received from ${connector.asset_name} (${connector.site_name}) for more than 6 hours. Last seen ${connector.last_seen_at ? new Date(connector.last_seen_at).toISOString() : 'never'}.`,
-      triggered_at: db.fn.now(),
-    });
+    // alerts_open_asset_type_uq is the real guard; the read above can go stale
+    // between check and insert. No row back means the alert already exists.
+    const inserted = await db('alerts')
+      .insert({
+        site_id: connector.site_id,
+        asset_id: connector.asset_id,
+        type: ALERT_TYPES.ASSET_OFFLINE,
+        severity: 'critical',
+        status: 'open',
+        message: `No data received from ${connector.asset_name} (${connector.site_name}) for more than 6 hours. Last seen ${connector.last_seen_at ? new Date(connector.last_seen_at).toISOString() : 'never'}.`,
+        triggered_at: db.fn.now(),
+      })
+      .onConflict()
+      .ignore()
+      .returning('id');
+    if (inserted.length === 0) continue;
+
     raised += 1;
     log(
       'info',

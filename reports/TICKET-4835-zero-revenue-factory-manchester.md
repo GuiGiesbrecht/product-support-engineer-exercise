@@ -1,14 +1,14 @@
 # TICKET-4835 · Revenue showing £0.00 for Factory Manchester
 
-|                    |                                                                            |
-| ------------------ | ---------------------------------------------------------------------------- |
-| Customer           | Pennine Group plc (reported by Rachel Donnelly)                              |
-| Reported           | 2026-07-28 11:20 UTC                                                         |
-| Severity           | High — revenue and savings are both wrong, on every surface                  |
-| Status             | **Diagnosed** · remediation is a data change, blocked on commercial input    |
-| Root cause in      | **Data / process** — a contract renewal that was never recorded              |
-| Contributing       | **Code** — a missing PPA rate is silently treated as a rate of zero          |
-| Affects            | Factory Manchester only, from 2026-07-01                                     |
+|               |                                                                           |
+| ------------- | ------------------------------------------------------------------------- |
+| Customer      | Pennine Group plc (reported by Rachel Donnelly)                           |
+| Reported      | 2026-07-28 11:20 UTC                                                      |
+| Severity      | High — revenue and savings are both wrong, on every surface               |
+| Status        | **Diagnosed** · remediation is a data change, blocked on commercial input |
+| Root cause in | **Data / process** — a contract renewal that was never recorded           |
+| Contributing  | **Code** — a missing PPA rate is silently treated as a rate of zero       |
+| Affects       | Factory Manchester only, from 2026-07-01                                  |
 
 ---
 
@@ -21,7 +21,7 @@ platform reports £0.00 revenue.
 The same gap inflates savings. `savings = self-consumed × (grid tariff − PPA
 rate)`, and with the PPA rate absent the formula uses zero, making the site
 look like it saves the full grid price. That is why Rachel saw two things at
-once that seemed unrelated: revenue collapsed and savings went *up*.
+once that seemed unrelated: revenue collapsed and savings went _up_.
 
 This is not a calculation bug. The figures are being computed correctly from
 inputs that are incomplete. The code's contribution is that it presents the
@@ -109,10 +109,10 @@ savings = self_consumed × (grid_price − COALESCE(ppa_rate, 0))
 
 With no agreement, `ppa_rate` becomes `0`:
 
-| Figure  | Reported today | With a renewal at £0.12/kWh | Error           |
-| ------- | -------------- | --------------------------- | --------------- |
-| Revenue | £0.00          | £4,678.71                   | −£4,678.71      |
-| Savings | £10,916.99     | £6,238.28                   | **+£4,678.71**  |
+| Figure  | Reported today | With a renewal at £0.12/kWh | Error          |
+| ------- | -------------- | --------------------------- | -------------- |
+| Revenue | £0.00          | £4,678.71                   | −£4,678.71     |
+| Savings | £10,916.99     | £6,238.28                   | **+£4,678.71** |
 
 Both errors are the same size. At this site self-consumption equals production
 — a factory consumes everything it generates — so
@@ -219,11 +219,11 @@ contract.
 renewed, and on what rate and term. Three possible answers, three different
 actions:
 
-| Answer                        | Action                                                                |
-| ----------------------------- | ----------------------------------------------------------------------- |
-| Renewed, just never entered   | Record the agreement (step 2). July figures become correct retroactively |
-| Still under negotiation       | Site is genuinely unpriced. Tell Pennine that £0.00 is accurate for now, and suppress the savings figure rather than showing an inflated one |
-| Not renewing                  | Same as above, plus the site's reporting needs a decision               |
+| Answer                      | Action                                                                                                                                       |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Renewed, just never entered | Record the agreement (step 2). July figures become correct retroactively                                                                     |
+| Still under negotiation     | Site is genuinely unpriced. Tell Pennine that £0.00 is accurate for now, and suppress the savings figure rather than showing an inflated one |
+| Not renewing                | Same as above, plus the site's reporting needs a decision                                                                                    |
 
 **2 — Once confirmed, record it the same way Leeds Depot was.** Values in
 angle brackets come from the commercial answer.
@@ -231,7 +231,7 @@ angle brackets come from the commercial answer.
 > ⚠️ **The `UPDATE ... superseded` is not optional, and it is the dangerous
 > half of this operation.** Nothing in the schema prevents two `active`
 > agreements from covering the same day for the same site, and the reporting
-> join matches *both*, emitting a duplicate row per day. Demonstrated inside a
+> join matches _both_, emitting a duplicate row per day. Demonstrated inside a
 > rolled-back transaction:
 >
 > ```
@@ -245,7 +245,6 @@ angle brackets come from the commercial answer.
 >
 > Revenue silently doubles on every surface. Insert and supersede in the same
 > transaction, and verify the day count afterwards.
-
 
 ```sql
 BEGIN;
@@ -292,15 +291,15 @@ the agreement and that revenue is no longer £0.00 for July.
 
 ## Preventing recurrence
 
-| Priority | Action                                                                                                                                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **P1**   | Run the detection query above as a scheduled data-quality check and raise an alert. An active site generating with no covering agreement is always a defect — it would have caught this on 1 July instead of on day 28. |
-| **P1**   | Stop coalescing a missing PPA rate to zero in `reportingService.siteDailyKpis` and in the `mv_site_daily_kpis` definition. "No contract" and "a contract at £0.00" are different states and must not render identically. Surfacing them as unavailable is more work than a patch — it touches the non-null GraphQL fields and the console — but the current behaviour publishes a *better-looking* savings number when data is missing, which is the failure mode least likely to be reported. |
-| **P1**   | Add an exclusion constraint so two `active` agreements cannot overlap for the same site. Today nothing stops it, and the consequence is doubled revenue rather than an error — a worse outcome than the bug being reported here. The database can enforce this; a manual process cannot. |
-| **P2**   | Warn on agreements approaching expiry. Leeds Depot was renewed with two days to spare; the same process missed Manchester entirely. A 60-day notice would have surfaced both. |
-| **P2**   | Reconcile `status` with the date window, or drop the column. It duplicates information the dates already carry and has drifted — Manchester's expired agreement is still marked `active`, so the field cannot be trusted on its own. |
-| **P2**   | Give agreements a write path. Renewals are executed by hand against the database because the API offers no mutation and the console offers no screen. Every future renewal carries the same risk of being forgotten or applied incompletely. |
-| **P3**   | Show the applicable rate next to revenue on Site Overview. Rachel could then have seen "no agreement" instead of inferring it from a £0.00.                    |
+| Priority | Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **P1**   | Run the detection query above as a scheduled data-quality check and raise an alert. An active site generating with no covering agreement is always a defect — it would have caught this on 1 July instead of on day 28.                                                                                                                                                                                                                                                                        |
+| **P1**   | Stop coalescing a missing PPA rate to zero in `reportingService.siteDailyKpis` and in the `mv_site_daily_kpis` definition. "No contract" and "a contract at £0.00" are different states and must not render identically. Surfacing them as unavailable is more work than a patch — it touches the non-null GraphQL fields and the console — but the current behaviour publishes a _better-looking_ savings number when data is missing, which is the failure mode least likely to be reported. |
+| **P1**   | Add an exclusion constraint so two `active` agreements cannot overlap for the same site. Today nothing stops it, and the consequence is doubled revenue rather than an error — a worse outcome than the bug being reported here. The database can enforce this; a manual process cannot.                                                                                                                                                                                                       |
+| **P2**   | Warn on agreements approaching expiry. Leeds Depot was renewed with two days to spare; the same process missed Manchester entirely. A 60-day notice would have surfaced both.                                                                                                                                                                                                                                                                                                                  |
+| **P2**   | Reconcile `status` with the date window, or drop the column. It duplicates information the dates already carry and has drifted — Manchester's expired agreement is still marked `active`, so the field cannot be trusted on its own.                                                                                                                                                                                                                                                           |
+| **P2**   | Give agreements a write path. Renewals are executed by hand against the database because the API offers no mutation and the console offers no screen. Every future renewal carries the same risk of being forgotten or applied incompletely.                                                                                                                                                                                                                                                   |
+| **P3**   | Show the applicable rate next to revenue on Site Overview. Rachel could then have seen "no agreement" instead of inferring it from a £0.00.                                                                                                                                                                                                                                                                                                                                                    |
 
 No code change is included with this report: the customer-facing defect is a
 missing record, and shipping a guess about a contract would be worse than the

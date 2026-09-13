@@ -49,6 +49,8 @@ services:
       context: .
       dockerfile: docker/api.Dockerfile
     command: ['node', 'apps/api/src/workers/index.js']
+    # The scheduler holds its timing in memory and does not coordinate with
+    # other instances; a second worker repeats every job run. Keep at one.
     environment:
       DATABASE_URL: postgres://metris:metris_dev@db:5432/metris
       # Alert evaluation pages the on-call rota; keep it disabled outside production.
