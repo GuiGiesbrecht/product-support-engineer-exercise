@@ -6,12 +6,12 @@ Each report states what was found, how it is known, and what to do next —
 diagnosis first, with the evidence that supports it, and a patch only where one
 is warranted.
 
-| Ticket                                                                         | Report                                                                                         | Status    | Root cause in     |
-| ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | --------- | ----------------- |
-| [TICKET-4821](../tickets/TICKET-4821-dashboard-csv-revenue-mismatch/ticket.md) | [Dashboard revenue does not match CSV export](TICKET-4821-dashboard-csv-revenue-mismatch.md)   | **Fixed** | Code + monitoring |
-| [TICKET-4830](../tickets/TICKET-4830-generation-drop-school-bristol.md)        | —                                                                                              | Open      | —                 |
-| [TICKET-4835](../tickets/TICKET-4835-zero-revenue-factory-manchester.md)       | [Revenue showing £0.00 for Factory Manchester](TICKET-4835-zero-revenue-factory-manchester.md) | Diagnosed | Data / process    |
-| [TICKET-4847](../tickets/TICKET-4847-duplicate-offline-alerts.md)              | [Customer received duplicate offline alerts](TICKET-4847-duplicate-offline-alerts.md)          | Diagnosed | Configuration     |
+| Ticket                                                                         | Report                                                                                         | Status    | Root cause in           |
+| ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | --------- | ----------------------- |
+| [TICKET-4821](../tickets/TICKET-4821-dashboard-csv-revenue-mismatch/ticket.md) | [Dashboard revenue does not match CSV export](TICKET-4821-dashboard-csv-revenue-mismatch.md)   | **Fixed** | Code + monitoring       |
+| [TICKET-4830](../tickets/TICKET-4830-generation-drop-school-bristol.md)        | [Generation dropped ~40% at School Bristol](TICKET-4830-generation-drop-school-bristol.md)     | Diagnosed | Hardware / connectivity |
+| [TICKET-4835](../tickets/TICKET-4835-zero-revenue-factory-manchester.md)       | [Revenue showing £0.00 for Factory Manchester](TICKET-4835-zero-revenue-factory-manchester.md) | Diagnosed | Data / process          |
+| [TICKET-4847](../tickets/TICKET-4847-duplicate-offline-alerts.md)              | [Customer received duplicate offline alerts](TICKET-4847-duplicate-offline-alerts.md)          | Diagnosed | Configuration           |
 
 ## Follow-up work
 
@@ -24,6 +24,11 @@ pick up the hardening items the report raises. Outstanding items:
 | Report job failures to Sentry; `runJob` currently swallows them                                          | TICKET-4821 | P1       |
 | CI check: every view refreshed `CONCURRENTLY` must have a unique index                                   | TICKET-4821 | P2       |
 | Surface rollup freshness in the console                                                                  | TICKET-4821 | P3       |
+| Mark days where an active asset produced no reading — chart, CSV and Dashboard render them as measured   | TICKET-4830 | P1       |
+| Expose production per asset; today only the site total leaves the API                                    | TICKET-4830 | P1       |
+| Make ingest report discarded payloads — unmatched `external_id` is dropped silently behind a `202`       | TICKET-4830 | P1       |
+| Alert on a connector failing its status poll on consecutive runs, distinctly from `asset_offline`        | TICKET-4830 | P2       |
+| Store irradiance from the weather stations — they are registered assets that produce no rows             | TICKET-4830 | P3       |
 | Detect active sites generating with no covering PPA agreement                                            | TICKET-4835 | P1       |
 | Stop coalescing a missing PPA rate to zero in both calculation paths                                     | TICKET-4835 | P1       |
 | Prevent overlapping active PPA agreements per site (exclusion constraint)                                | TICKET-4835 | P1       |
