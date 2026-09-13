@@ -1,14 +1,14 @@
 # TICKET-4821 · Dashboard revenue does not match CSV export
 
-|                    |                                                                       |
-| ------------------ | --------------------------------------------------------------------- |
-| Customer           | Albion Logistics Ltd (reported by Priya Nair)                          |
-| Reported           | 2026-07-29 14:36 UTC                                                   |
-| Severity           | High — figures are used for invoicing                                  |
-| Status             | **Fixed** · index restored, rollup refreshed, both surfaces verified   |
-| Root cause in      | **Code** — a schema migration, compounded by a monitoring gap          |
-| Affects            | **All customers**, not just the reporter                               |
-| Impact window      | 2026-07-27 onwards, and widening daily                                 |
+|               |                                                                      |
+| ------------- | -------------------------------------------------------------------- |
+| Customer      | Albion Logistics Ltd (reported by Priya Nair)                        |
+| Reported      | 2026-07-29 14:36 UTC                                                 |
+| Severity      | High — figures are used for invoicing                                |
+| Status        | **Fixed** · index restored, rollup refreshed, both surfaces verified |
+| Root cause in | **Code** — a schema migration, compounded by a monitoring gap        |
+| Affects       | **All customers**, not just the reporter                             |
+| Impact window | 2026-07-27 onwards, and widening daily                               |
 
 ---
 
@@ -36,11 +36,11 @@ them stopped being fed.
 Reproduced exactly, signed in as `finance@albionlogistics.co.uk`, both
 surfaces reporting the same window (`2026-07-01` → `2026-07-29`):
 
-| Surface                             | Revenue       | Production     | Savings    |
-| ----------------------------------- | ------------- | -------------- | ---------- |
-| Dashboard (GraphQL `dashboard`)     | **£4,321.00** | 54,012.50 kWh  | £4,844.96  |
-| CSV export (`TOTAL` row)            | **£4,087.00** | 51,087.50 kWh  | £5,380.00  |
-| Revenue page (GraphQL `revenueByDay`) | £4,087.00   | 51,087.50 kWh  | —          |
+| Surface                               | Revenue       | Production    | Savings   |
+| ------------------------------------- | ------------- | ------------- | --------- |
+| Dashboard (GraphQL `dashboard`)       | **£4,321.00** | 54,012.50 kWh | £4,844.96 |
+| CSV export (`TOTAL` row)              | **£4,087.00** | 51,087.50 kWh | £5,380.00 |
+| Revenue page (GraphQL `revenueByDay`) | £4,087.00     | 51,087.50 kWh | —         |
 
 The gap is £234.00 in revenue and 2,925.00 kWh in production. At London
 Warehouse's PPA rate of £0.08/kWh, `2,925.00 × 0.08 = £234.00` — the entire
@@ -53,15 +53,15 @@ reporting window are identical on both sides.
 
 ### Timeline
 
-| When (UTC)        | Event                                                                                       |
-| ----------------- | --------------------------------------------------------------------------------------------- |
-| 2026-07-27 02:00  | Last successful `refresh-kpi-views` run                                                        |
+| When (UTC)        | Event                                                                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------------------------- |
+| 2026-07-27 02:00  | Last successful `refresh-kpi-views` run                                                                       |
 | 2026-07-27 ~05:31 | Release deploys `20260727053100_recreate_mv_site_daily_kpis.js` — view recreated **without its unique index** |
 | 2026-07-27 13:47  | SolarEdge corrective re-sync retracts 10 production payloads (8,175.00 kWh, 20–24 July) from London Warehouse |
-| 2026-07-27 13:52  | Gateway `SE-GW-2201` firmware updated 2.4.1 → 2.4.2                                            |
-| 2026-07-28 02:00  | `refresh-kpi-views` fails for the first time                                                   |
-| 2026-07-29 02:00  | Fails again                                                                                     |
-| 2026-07-29 14:36  | Ticket raised                                                                                   |
+| 2026-07-27 13:52  | Gateway `SE-GW-2201` firmware updated 2.4.1 → 2.4.2                                                           |
+| 2026-07-28 02:00  | `refresh-kpi-views` fails for the first time                                                                  |
+| 2026-07-29 02:00  | Fails again                                                                                                   |
+| 2026-07-29 14:36  | Ticket raised                                                                                                 |
 
 ### The defect
 
@@ -199,12 +199,12 @@ only in a table nobody was watching.
 Every customer's dashboard has been wrong since 2026-07-27 — Albion only
 noticed because their error happens to point upward.
 
-| Customer                  | Dashboard   | Correct     | Error       |
-| ------------------------- | ----------- | ----------- | ----------- |
-| Albion Logistics Ltd      | £4,321.00   | £4,087.00   | **+£234.00** |
-| Northgate Education Trust | £1,629.09   | £1,773.78   | −£144.69    |
-| Pennine Group plc         | £5,325.03   | £5,932.46   | −£607.43    |
-| **Portfolio**             | £11,275.12  | £11,793.24  | **−£518.12** |
+| Customer                  | Dashboard  | Correct    | Error        |
+| ------------------------- | ---------- | ---------- | ------------ |
+| Albion Logistics Ltd      | £4,321.00  | £4,087.00  | **+£234.00** |
+| Northgate Education Trust | £1,629.09  | £1,773.78  | −£144.69     |
+| Pennine Group plc         | £5,325.03  | £5,932.46  | −£607.43     |
+| **Portfolio**             | £11,275.12 | £11,793.24 | **−£518.12** |
 
 - Only the **Dashboard** is affected. Revenue, Site Overview and the CSV export
   have been correct throughout.
@@ -280,13 +280,13 @@ is unrelated to this defect.
 
 ## Preventing recurrence
 
-| Priority | Action                                                                                                                                                          |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Priority | Action                                                                                                                                                                                                                          |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **P1**   | **Alert on failed jobs.** `jobs.status = 'failed'` is already recorded and nothing consumes it. A revenue-critical job failed silently twice. This gap, not the missing index, is why the customer found the bug before we did. |
-| **P1**   | Have `refresh-kpi-views` report failures to Sentry as well as to `jobs` — `runJob` currently swallows them, so the error is invisible to alerting.                  |
-| **P2**   | Add a startup or CI check asserting that every materialized view refreshed with `CONCURRENTLY` has a unique index. This class of defect is silent by construction.  |
-| **P2**   | Treat "recreate a materialized view" as a reviewed pattern: any migration that drops a view must recreate its indexes in the same migration.                        |
-| **P3**   | Surface rollup freshness in the console — a dashboard reading a snapshot should say how old that snapshot is. The customer had no way to tell.                      |
+| **P1**   | Have `refresh-kpi-views` report failures to Sentry as well as to `jobs` — `runJob` currently swallows them, so the error is invisible to alerting.                                                                              |
+| **P2**   | Add a startup or CI check asserting that every materialized view refreshed with `CONCURRENTLY` has a unique index. This class of defect is silent by construction.                                                              |
+| **P2**   | Treat "recreate a materialized view" as a reviewed pattern: any migration that drops a view must recreate its indexes in the same migration.                                                                                    |
+| **P3**   | Surface rollup freshness in the console — a dashboard reading a snapshot should say how old that snapshot is. The customer had no way to tell.                                                                                  |
 
 Deliberately **not** changed: the dual read path (rollup for the dashboard,
 live queries elsewhere) is a sound design for the traffic profile, and falling
