@@ -35,6 +35,9 @@ const JOBS = [
  * Minimal in-process scheduler. On boot each job catches up if its last
  * completed run is older than its interval — a worker that was down does not
  * wait a full cycle to recover. Failed runs retry hourly.
+ *
+ * Timing lives in this process and nothing coordinates instances, so a second
+ * worker repeats every run instead of sharing it. Run exactly one.
  */
 async function scheduleLoop(definition) {
   const lastCompleted = await db('jobs')
