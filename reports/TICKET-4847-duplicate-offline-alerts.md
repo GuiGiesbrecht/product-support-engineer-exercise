@@ -1,13 +1,16 @@
 # TICKET-4847 · Customer received duplicate offline alerts
 
-|               |                                                                                         |
-| ------------- | --------------------------------------------------------------------------------------- |
-| Raised by     | Daniel Okafor (`ops@metris.energy`) — internal                                          |
-| Reported      | 2026-07-29 10:42 UTC                                                                    |
-| Severity      | Medium — noise and lost trust in the alert channel, no data loss                        |
-| Status        | **Diagnosed** · symptom contained, cause needs a design decision                        |
-| Root cause in | **Configuration** — replicas added to a scheduler that cannot divide or coordinate work |
-| Affects       | Every scheduled job since 2026-07-22; only `alert-scan` causes visible harm             |
+|                 |                                                                                         |
+| --------------- | --------------------------------------------------------------------------------------- |
+| Ticket          | [TICKET-4847](../tickets/TICKET-4847-duplicate-offline-alerts.md)                       |
+| Raised by       | Daniel Okafor (`ops@metris.energy`) — internal                                          |
+| Reported        | 2026-07-29 10:42 UTC                                                                    |
+| Severity        | Medium — noise and lost trust in the alert channel, no data loss                        |
+| Status          | **Diagnosed** · symptom contained, cause needs a design decision                        |
+| Root cause in   | **Configuration** — replicas added to a scheduler that cannot divide or coordinate work |
+| Affects         | Every scheduled job since 2026-07-22; only `alert-scan` causes visible harm             |
+| Investigated by | Guilherme Duarte Giesbrecht                                                             |
+| Report date     | 2026-09-13 · last updated 2026-09-14                                                    |
 
 ---
 

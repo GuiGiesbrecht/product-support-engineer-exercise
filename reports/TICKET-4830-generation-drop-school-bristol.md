@@ -1,14 +1,17 @@
 # TICKET-4830 · Generation dropped ~40% at School Bristol
 
-|               |                                                                          |
-| ------------- | ------------------------------------------------------------------------ |
-| Customer      | Northgate Education Trust (reported by Tom Whitfield)                    |
-| Reported      | 2026-07-29 08:10 UTC                                                     |
-| Severity      | High — the site's only PV asset pair is down to one, and revenue with it |
-| Status        | **Diagnosed** · remediation is a field intervention, not a code change   |
-| Root cause in | **Hardware / connectivity** — contact with Inverter 2 was lost           |
-| Contributing  | **Product** — the console never ties the outage to the generation figure |
-| Affects       | School Bristol only, from 2026-07-28                                     |
+|                 |                                                                          |
+| --------------- | ------------------------------------------------------------------------ |
+| Ticket          | [TICKET-4830](../tickets/TICKET-4830-generation-drop-school-bristol.md)  |
+| Customer        | Northgate Education Trust (reported by Tom Whitfield)                    |
+| Reported        | 2026-07-29 08:10 UTC                                                     |
+| Severity        | High — the site's only PV asset pair is down to one, and revenue with it |
+| Status          | **Diagnosed** · remediation is a field intervention, not a code change   |
+| Root cause in   | **Hardware / connectivity** — contact with Inverter 2 was lost           |
+| Contributing    | **Product** — the console never ties the outage to the generation figure |
+| Affects         | School Bristol only, from 2026-07-28                                     |
+| Investigated by | Guilherme Duarte Giesbrecht                                              |
+| Report date     | 2026-09-13 · last updated 2026-09-14                                     |
 
 ---
 

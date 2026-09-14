@@ -1,14 +1,17 @@
 # TICKET-4852 · CSV export fails for "All sites" on staff accounts
 
-|               |                                                                                     |
-| ------------- | ----------------------------------------------------------------------------------- |
-| Raised by     | Daniel Okafor (`ops@metris.energy`) — internal                                      |
-| Reported      | 2026-07-29 09:20 UTC                                                                |
-| Severity      | Medium — staff cannot export a portfolio; no customer impact                        |
-| Status        | **Fixed** · the export now follows the customer switcher                            |
-| Root cause in | **Code** — the export took its scope from the account instead of from the selection |
-| Affects       | All three staff accounts, on every customer; customer accounts unaffected           |
-| Impact window | Since the endpoint was written                                                      |
+|                 |                                                                                     |
+| --------------- | ----------------------------------------------------------------------------------- |
+| Ticket          | [TICKET-4852](../tickets/TICKET-4852-csv-export-all-sites/ticket.md)                |
+| Raised by       | Daniel Okafor (`ops@metris.energy`) — internal                                      |
+| Reported        | 2026-07-29 09:20 UTC                                                                |
+| Severity        | Medium — staff cannot export a portfolio; no customer impact                        |
+| Status          | **Fixed** · the export now follows the customer switcher                            |
+| Root cause in   | **Code** — the export took its scope from the account instead of from the selection |
+| Affects         | All three staff accounts, on every customer; customer accounts unaffected           |
+| Impact window   | Since the endpoint was written                                                      |
+| Investigated by | Guilherme Duarte Giesbrecht                                                         |
+| Report date     | 2026-09-13 · last updated 2026-09-14                                                |
 
 ---
 
