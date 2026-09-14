@@ -172,6 +172,14 @@ Choosing the plugin over "make the console send `operationName`" is deliberate:
 the console is one of several clients, and the one that mattered most during
 this week's work was curl.
 
+**3 — Name the console's one anonymous operation.**
+`apps/web/src/components/CustomerSwitcher.tsx` posted the query shorthand,
+`{ customers { id name } }` — a valid operation that simply has no name,
+so there was nothing for the plugin to record. The switcher renders in the console
+layout, which made it one unattributable `/graphql` row per page load. Naming it
+`CustomerList` changes the request in no other way. The anonymous rows that remain
+now come from curl and the Apollo landing page rather than from the product itself.
+
 ### Verification (completed)
 
 Every route exercised against the running API, log rows read back:
@@ -194,6 +202,12 @@ to record. A GraphQL request rejected for authentication is still attributed to
 its operation. Export metadata is unchanged —
 `{"to": "2026-07-02", "from": "2026-07-01", "site": "all", "customerId": 1}` —
 and the query string does not leak into `path`.
+
+The renamed switcher query was checked on its own, against the string the
+component sends: `CustomerList` is recorded for both a staff and a customer
+account, and each still receives its own scope — three customers and one.
+The shorthand form still records no name, confirming the name is the only
+difference between them.
 
 `npm run lint`, `npm test` (15 tests) and `prettier --check` pass.
 
