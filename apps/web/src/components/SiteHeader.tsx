@@ -1,3 +1,5 @@
+import { formatRate } from '@/lib/format';
+
 export interface SiteInfo {
   name: string;
   city: string;
@@ -25,7 +27,7 @@ export default function SiteHeader({ site }: { site: SiteInfo }) {
         <p className="text-xs font-medium uppercase tracking-wide text-slate-400">PPA</p>
         {site.activePpa ? (
           <p className="mt-1 text-slate-700">
-            £{site.activePpa.ratePerKwh.toFixed(4)}/kWh · until {site.activePpa.endDate} ·{' '}
+            {formatRate(site.activePpa.ratePerKwh)} · until {site.activePpa.endDate} ·{' '}
             {site.activePpa.counterparty}
           </p>
         ) : (
