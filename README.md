@@ -22,6 +22,31 @@ support queue.
 Recent Sentry issues are exported under [`docs/sentry/`](docs/sentry). System
 architecture notes live in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
+## Submission
+
+The six incident reports live in [`reports/`](reports), indexed in
+[`reports/README.md`](reports/README.md). Each report states what was found,
+how it is known and what to do next, and closes with the queries and requests
+that reproduce every figure it quotes against `docker compose up`.
+
+| Ticket                                                                      | Report                                                                                                           | Status    | Pull requests                                                                                                                                                    |
+| --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [TICKET-4821](tickets/TICKET-4821-dashboard-csv-revenue-mismatch/ticket.md) | [Dashboard revenue does not match CSV export](reports/TICKET-4821-dashboard-csv-revenue-mismatch.md)             | Fixed     | [#1](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/1), [#6](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/6) |
+| [TICKET-4830](tickets/TICKET-4830-generation-drop-school-bristol.md)        | [Generation dropped ~40% at School Bristol](reports/TICKET-4830-generation-drop-school-bristol.md)               | Diagnosed | [#4](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/4)                                                                                  |
+| [TICKET-4835](tickets/TICKET-4835-zero-revenue-factory-manchester.md)       | [Revenue showing £0.00 for Factory Manchester](reports/TICKET-4835-zero-revenue-factory-manchester.md)           | Diagnosed | [#2](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/2), [#6](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/6) |
+| [TICKET-4847](tickets/TICKET-4847-duplicate-offline-alerts.md)              | [Customer received duplicate offline alerts](reports/TICKET-4847-duplicate-offline-alerts.md)                    | Diagnosed | [#3](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/3)                                                                                  |
+| [TICKET-4852](tickets/TICKET-4852-csv-export-all-sites/ticket.md) †         | [CSV export fails for "All sites" on staff accounts](reports/TICKET-4852-csv-export-all-sites.md)                | Fixed     | [#5](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/5)                                                                                  |
+| [TICKET-4856](tickets/TICKET-4856-api-logs-endpoint-identity/ticket.md) †   | [API request log does not identify which endpoint was called](reports/TICKET-4856-api-logs-endpoint-identity.md) | Fixed     | [#7](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/7)                                                                                  |
+
+† Raised during the rotation: defects found while working the queue, written
+up as internal tickets in the same format and worked the same way.
+
+_Fixed_ means the change in this repository resolves the defect and was
+verified against the reproduction environment; nothing has been deployed.
+_Diagnosed_ means the cause is established with evidence and the remediation
+lies outside this repository. Every change went through a pull request on this
+fork, one per ticket, with the report alongside the code it describes.
+
 ## Getting started
 
 Requirements: Docker with Compose.
@@ -101,5 +126,6 @@ packages/
   shared/       Domain helpers shared by API and web
 docker/         Container builds
 docs/           Architecture notes, Sentry exports, screenshots
+reports/        Incident reports, one per ticket, with an index and supporting notes
 tickets/        Support queue
 ```
