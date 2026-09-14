@@ -8,6 +8,7 @@ const {
 
 const typeDefs = require('./graphql/typeDefs');
 const resolvers = require('./graphql/resolvers');
+const operationNamePlugin = require('./graphql/operationNamePlugin');
 const { userFromRequest } = require('./lib/auth');
 const requestLogger = require('./lib/requestLogger');
 const authRoutes = require('./routes/auth');
@@ -33,7 +34,7 @@ async function start() {
   const apollo = new ApolloServer({
     typeDefs,
     resolvers,
-    plugins: [ApolloServerPluginLandingPageLocalDefault({ embed: true })],
+    plugins: [ApolloServerPluginLandingPageLocalDefault({ embed: true }), operationNamePlugin],
   });
   await apollo.start();
   app.use(
