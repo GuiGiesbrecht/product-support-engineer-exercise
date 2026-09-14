@@ -1,6 +1,9 @@
 # Incident reports
 
-One written report per ticket from the support queue in [`../tickets`](../tickets).
+One written report per ticket. Four came from the support queue in
+[`../tickets`](../tickets); two more, marked †, were raised during the rotation
+for defects found while working the queue, and were written up in the same
+ticket format and worked the same way.
 
 Each report states what was found, how it is known, and what to do next —
 diagnosis first, with the evidence that supports it, and a patch only where one
@@ -12,8 +15,21 @@ is warranted.
 | [TICKET-4830](../tickets/TICKET-4830-generation-drop-school-bristol.md)        | [Generation dropped ~40% at School Bristol](TICKET-4830-generation-drop-school-bristol.md)               | Diagnosed | Hardware / connectivity |
 | [TICKET-4835](../tickets/TICKET-4835-zero-revenue-factory-manchester.md)       | [Revenue showing £0.00 for Factory Manchester](TICKET-4835-zero-revenue-factory-manchester.md)           | Diagnosed | Data / process          |
 | [TICKET-4847](../tickets/TICKET-4847-duplicate-offline-alerts.md)              | [Customer received duplicate offline alerts](TICKET-4847-duplicate-offline-alerts.md)                    | Diagnosed | Configuration           |
-| [TICKET-4852](../tickets/TICKET-4852-csv-export-all-sites/ticket.md)           | [CSV export fails for "All sites" on staff accounts](TICKET-4852-csv-export-all-sites.md)                | **Fixed** | Code                    |
-| [TICKET-4856](../tickets/TICKET-4856-api-logs-endpoint-identity/ticket.md)     | [API request log does not identify which endpoint was called](TICKET-4856-api-logs-endpoint-identity.md) | **Fixed** | Code                    |
+| [TICKET-4852](../tickets/TICKET-4852-csv-export-all-sites/ticket.md) †         | [CSV export fails for "All sites" on staff accounts](TICKET-4852-csv-export-all-sites.md)                | **Fixed** | Code                    |
+| [TICKET-4856](../tickets/TICKET-4856-api-logs-endpoint-identity/ticket.md) †   | [API request log does not identify which endpoint was called](TICKET-4856-api-logs-endpoint-identity.md) | **Fixed** | Code                    |
+
+**Status.** _Fixed_ means a change in this repository resolves the defect and
+was verified against the reproduction environment; nothing has been deployed
+to production, and each customer message is written for that state.
+_Diagnosed_ means the cause is established with evidence and the remediation
+lies outside this repository — a field intervention, a data change awaiting
+commercial input, or an infrastructure and design decision — with the
+platform-side hardening listed under follow-up work.
+
+Notes that support a report without being incident records themselves live
+under [`notes/`](notes). There is one so far:
+[Scheduler design options for the worker pool](notes/TICKET-4847-scheduler-design-options.md),
+from TICKET-4847.
 
 ## Follow-up work
 
@@ -52,10 +68,10 @@ pick up the hardening items the report raises. Outstanding items:
 
 ## Code changes
 
-| Change                                                                                                                                                                                                                                                                                    | Ticket                    | Applied |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------- |
-| [`20260730090000_restore_mv_site_daily_kpis_unique_index.js`](../packages/db/migrations/20260730090000_restore_mv_site_daily_kpis_unique_index.js)                                                                                                                                        | TICKET-4821               | Yes     |
-| [`20260730094000_unique_open_alert_per_asset.js`](../packages/db/migrations/20260730094000_unique_open_alert_per_asset.js) + [`alertScan.js`](../apps/api/src/workers/jobs/alertScan.js) — contains the duplicate alerts; does not stop the duplicated execution                          | TICKET-4847               | Yes     |
-| [`export.js`](../apps/api/src/routes/export.js) + [`auth.js`](../apps/api/src/lib/auth.js) + [`api.ts`](../apps/web/src/lib/api.ts) — scopes the portfolio export to the selected customer                                                                                                | TICKET-4852               | Yes     |
-| [`typeDefs.js`](../apps/api/src/graphql/typeDefs.js) + [`kpiService.js`](../apps/api/src/services/kpiService.js) + the dashboard and Site Overview pages — states how current the dashboard rollup is, and shows the rate a site's revenue is billed at beside the figure                 | TICKET-4821 + TICKET-4835 | Yes     |
-| [`requestLogger.js`](../apps/api/src/lib/requestLogger.js) + [`operationNamePlugin.js`](../apps/api/src/graphql/operationNamePlugin.js) + [`CustomerSwitcher.tsx`](../apps/web/src/components/CustomerSwitcher.tsx) — records the endpoint that was called and the GraphQL operation name | TICKET-4856               | Yes     |
+| Change                                                                                                                                                                                                                                                                                    | Ticket                    | Pull request                                                                    | Applied |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------- | ------- |
+| [`20260730090000_restore_mv_site_daily_kpis_unique_index.js`](../packages/db/migrations/20260730090000_restore_mv_site_daily_kpis_unique_index.js)                                                                                                                                        | TICKET-4821               | [#1](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/1) | Yes     |
+| [`20260730094000_unique_open_alert_per_asset.js`](../packages/db/migrations/20260730094000_unique_open_alert_per_asset.js) + [`alertScan.js`](../apps/api/src/workers/jobs/alertScan.js) — contains the duplicate alerts; does not stop the duplicated execution                          | TICKET-4847               | [#3](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/3) | Yes     |
+| [`export.js`](../apps/api/src/routes/export.js) + [`auth.js`](../apps/api/src/lib/auth.js) + [`api.ts`](../apps/web/src/lib/api.ts) — scopes the portfolio export to the selected customer                                                                                                | TICKET-4852               | [#5](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/5) | Yes     |
+| [`typeDefs.js`](../apps/api/src/graphql/typeDefs.js) + [`kpiService.js`](../apps/api/src/services/kpiService.js) + the dashboard and Site Overview pages — states how current the dashboard rollup is, and shows the rate a site's revenue is billed at beside the figure                 | TICKET-4821 + TICKET-4835 | [#6](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/6) | Yes     |
+| [`requestLogger.js`](../apps/api/src/lib/requestLogger.js) + [`operationNamePlugin.js`](../apps/api/src/graphql/operationNamePlugin.js) + [`CustomerSwitcher.tsx`](../apps/web/src/components/CustomerSwitcher.tsx) — records the endpoint that was called and the GraphQL operation name | TICKET-4856               | [#7](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/7) | Yes     |
