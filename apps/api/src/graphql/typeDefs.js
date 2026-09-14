@@ -37,8 +37,22 @@ module.exports = /* GraphQL */ `
     revenueGbp: Float!
     savingsGbp: Float!
     openAlerts: Int!
+    freshness: RollupFreshness!
     daily: [DashboardDay!]!
     sites: [SiteSummary!]!
+  }
+
+  """
+  How current the pre-aggregated rollup behind the dashboard is. The dashboard
+  reads mv_site_daily_kpis, which a nightly job rebuilds; every other reporting
+  surface computes from the readings at request time. When the rollup falls
+  behind, the dashboard disagrees with those surfaces until it catches up.
+  """
+  type RollupFreshness {
+    "Latest day held in the rollup for this customer, or null when it holds none."
+    throughDay: String
+    "Days between throughDay and the latest day with readings. Zero when current."
+    daysBehind: Int
   }
 
   type DashboardDay {
@@ -57,6 +71,8 @@ module.exports = /* GraphQL */ `
     productionKwh: Float!
     revenueGbp: Float!
     savingsGbp: Float!
+    "PPA rate revenue is billed at, or null when no agreement covers the period."
+    ppaRatePerKwh: Float
   }
 
   type Site {

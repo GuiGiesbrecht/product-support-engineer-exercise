@@ -1,6 +1,6 @@
 const db = require('../db/knex');
 const cache = require('./cacheService');
-const { monthToDateRange } = require('@metris/shared');
+const { monthToDateRange, eachDay } = require('@metris/shared');
 
 const DASHBOARD_CACHE_TTL_MS = 60_000;
 
@@ -51,21 +51,42 @@ async function getDashboard(customerId) {
         [customerId, from, to]
       );
 
+      // The rate is read live rather than from the rollup, which does not carry
+      // it. A scalar subquery keeps it out of the GROUP BY: joining
+      // ppa_agreements would multiply rows, and nothing stops two active
+      // agreements from overlapping, so a join could silently double the sums.
       const { rows: sites } = await db.raw(
         `SELECT s.id, s.slug, s.name, s.city, s.capacity_kwp,
                 COALESCE(SUM(mv.production_kwh), 0) AS production_kwh,
                 COALESCE(SUM(mv.revenue_gbp), 0) AS revenue_gbp,
-                COALESCE(SUM(mv.savings_gbp), 0) AS savings_gbp
+                COALESCE(SUM(mv.savings_gbp), 0) AS savings_gbp,
+                (SELECT pa.rate_per_kwh
+                   FROM ppa_agreements pa
+                  WHERE pa.site_id = s.id
+                    AND pa.status = 'active'
+                    AND ? BETWEEN pa.start_date AND pa.end_date
+                  ORDER BY pa.start_date
+                  LIMIT 1) AS ppa_rate_per_kwh
          FROM sites s
          LEFT JOIN mv_site_daily_kpis mv
            ON mv.site_id = s.id AND mv.day BETWEEN ? AND ?
          WHERE s.customer_id = ?
          GROUP BY s.id, s.slug, s.name, s.city, s.capacity_kwp
          ORDER BY s.name`,
-        [from, to, customerId]
+        [to, from, to, customerId]
       );
 
-      return { totals: totals[0], daily, sites };
+      // Read inside the cached block so that the freshness reported always
+      // describes the figures returned with it.
+      const { rows: freshnessRows } = await db.raw(
+        `SELECT MAX(mv.day)::text AS through_day
+         FROM mv_site_daily_kpis mv
+         JOIN sites s ON s.id = mv.site_id
+         WHERE s.customer_id = ? AND mv.day BETWEEN ? AND ?`,
+        [customerId, from, to]
+      );
+
+      return { totals: totals[0], daily, sites, throughDay: freshnessRows[0].through_day };
     }
   );
 
@@ -84,6 +105,10 @@ async function getDashboard(customerId) {
     revenueGbp: Number(value.totals.revenue_gbp),
     savingsGbp: Number(value.totals.savings_gbp),
     openAlerts: alertRows[0].open_alerts,
+    freshness: {
+      throughDay: value.throughDay,
+      daysBehind: value.throughDay ? eachDay(value.throughDay, to).length - 1 : null,
+    },
     daily: value.daily.map((row) => ({
       day: row.day,
       productionKwh: Number(row.production_kwh),
@@ -99,6 +124,7 @@ async function getDashboard(customerId) {
       productionKwh: Number(row.production_kwh),
       revenueGbp: Number(row.revenue_gbp),
       savingsGbp: Number(row.savings_gbp),
+      ppaRatePerKwh: row.ppa_rate_per_kwh === null ? null : Number(row.ppa_rate_per_kwh),
     })),
     cacheState,
   };
