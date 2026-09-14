@@ -1,17 +1,17 @@
 # TICKET-4821 · Dashboard revenue does not match CSV export
 
-|                 |                                                                                |
-| --------------- | ------------------------------------------------------------------------------ |
-| Ticket          | [TICKET-4821](../tickets/TICKET-4821-dashboard-csv-revenue-mismatch/ticket.md) |
-| Customer        | Albion Logistics Ltd (reported by Priya Nair)                                  |
-| Reported        | 2026-07-29 14:36 UTC                                                           |
-| Severity        | High — figures are used for invoicing                                          |
-| Status          | **Fixed** · index restored, rollup refreshed, both surfaces verified           |
-| Root cause in   | **Code** — a schema migration, compounded by a monitoring gap                  |
-| Affects         | **All customers**, not just the reporter                                       |
-| Impact window   | 2026-07-27 onwards, and widening daily                                         |
-| Investigated by | Guilherme Duarte Giesbrecht                                                    |
-| Report date     | 2026-09-12 · last updated 2026-09-14                                           |
+|                 |                                                                                                                      |
+| --------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Ticket          | [TICKET-4821](../tickets/TICKET-4821-dashboard-csv-revenue-mismatch/ticket.md)                                       |
+| Customer        | Albion Logistics Ltd (reported by Priya Nair)                                                                        |
+| Reported        | 2026-07-29 14:36 UTC                                                                                                 |
+| Severity        | High — figures are used for invoicing                                                                                |
+| Status          | **Fixed** · index restored, rollup refreshed, both surfaces verified — in the reproduction environment, not deployed |
+| Root cause in   | **Code** — a schema migration, compounded by a monitoring gap                                                        |
+| Affects         | **All customers**, not just the reporter                                                                             |
+| Impact window   | 2026-07-27 onwards, and widening daily                                                                               |
+| Investigated by | Guilherme Duarte Giesbrecht                                                                                          |
+| Report date     | 2026-09-12 · last updated 2026-09-14                                                                                 |
 
 ---
 

@@ -15,6 +15,14 @@ is warranted.
 | [TICKET-4852](../tickets/TICKET-4852-csv-export-all-sites/ticket.md)           | [CSV export fails for "All sites" on staff accounts](TICKET-4852-csv-export-all-sites.md)                | **Fixed** | Code                    |
 | [TICKET-4856](../tickets/TICKET-4856-api-logs-endpoint-identity/ticket.md)     | [API request log does not identify which endpoint was called](TICKET-4856-api-logs-endpoint-identity.md) | **Fixed** | Code                    |
 
+**Status.** _Fixed_ means a change in this repository resolves the defect and
+was verified against the reproduction environment; nothing has been deployed
+to production, and each customer message is written for that state.
+_Diagnosed_ means the cause is established with evidence and the remediation
+lies outside this repository — a field intervention, a data change awaiting
+commercial input, or an infrastructure and design decision — with the
+platform-side hardening listed under follow-up work.
+
 ## Follow-up work
 
 Each ticket is worked in two passes: fix the customer-facing defect first, then
