@@ -26,6 +26,11 @@ lies outside this repository — a field intervention, a data change awaiting
 commercial input, or an infrastructure and design decision — with the
 platform-side hardening listed under follow-up work.
 
+Notes that support a report without being incident records themselves live
+under [`notes/`](notes). There is one so far:
+[Scheduler design options for the worker pool](notes/TICKET-4847-scheduler-design-options.md),
+from TICKET-4847.
+
 ## Follow-up work
 
 Each ticket is worked in two passes: fix the customer-facing defect first, then
