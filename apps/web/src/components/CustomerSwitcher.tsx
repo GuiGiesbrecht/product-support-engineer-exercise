@@ -15,11 +15,13 @@ export default function CustomerSwitcher() {
 
   useEffect(() => {
     if (!user) return;
-    gql<{ customers: Customer[] }>(`{ customers { id name } }`).then(({ customers: list }) => {
-      setCustomers(list);
-      const stored = getSelectedCustomerId();
-      setSelected(stored && list.some((c) => c.id === stored) ? stored : list[0]?.id || '');
-    });
+    gql<{ customers: Customer[] }>(`query CustomerList { customers { id name } }`).then(
+      ({ customers: list }) => {
+        setCustomers(list);
+        const stored = getSelectedCustomerId();
+        setSelected(stored && list.some((c) => c.id === stored) ? stored : list[0]?.id || '');
+      }
+    );
   }, []);
 
   if (!user) return null;
