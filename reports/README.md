@@ -1,6 +1,9 @@
 # Incident reports
 
-One written report per ticket from the support queue in [`../tickets`](../tickets).
+One written report per ticket. Four came from the support queue in
+[`../tickets`](../tickets); two more, marked †, were raised during the rotation
+for defects found while working the queue, and were written up in the same
+ticket format and worked the same way.
 
 Each report states what was found, how it is known, and what to do next —
 diagnosis first, with the evidence that supports it, and a patch only where one
@@ -12,8 +15,8 @@ is warranted.
 | [TICKET-4830](../tickets/TICKET-4830-generation-drop-school-bristol.md)        | [Generation dropped ~40% at School Bristol](TICKET-4830-generation-drop-school-bristol.md)               | Diagnosed | Hardware / connectivity |
 | [TICKET-4835](../tickets/TICKET-4835-zero-revenue-factory-manchester.md)       | [Revenue showing £0.00 for Factory Manchester](TICKET-4835-zero-revenue-factory-manchester.md)           | Diagnosed | Data / process          |
 | [TICKET-4847](../tickets/TICKET-4847-duplicate-offline-alerts.md)              | [Customer received duplicate offline alerts](TICKET-4847-duplicate-offline-alerts.md)                    | Diagnosed | Configuration           |
-| [TICKET-4852](../tickets/TICKET-4852-csv-export-all-sites/ticket.md)           | [CSV export fails for "All sites" on staff accounts](TICKET-4852-csv-export-all-sites.md)                | **Fixed** | Code                    |
-| [TICKET-4856](../tickets/TICKET-4856-api-logs-endpoint-identity/ticket.md)     | [API request log does not identify which endpoint was called](TICKET-4856-api-logs-endpoint-identity.md) | **Fixed** | Code                    |
+| [TICKET-4852](../tickets/TICKET-4852-csv-export-all-sites/ticket.md) †         | [CSV export fails for "All sites" on staff accounts](TICKET-4852-csv-export-all-sites.md)                | **Fixed** | Code                    |
+| [TICKET-4856](../tickets/TICKET-4856-api-logs-endpoint-identity/ticket.md) †   | [API request log does not identify which endpoint was called](TICKET-4856-api-logs-endpoint-identity.md) | **Fixed** | Code                    |
 
 **Status.** _Fixed_ means a change in this repository resolves the defect and
 was verified against the reproduction environment; nothing has been deployed
