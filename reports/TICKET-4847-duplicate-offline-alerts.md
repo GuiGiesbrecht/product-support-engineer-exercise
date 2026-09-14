@@ -216,7 +216,9 @@ worker's own execution timing, not of the schedule. Two replicas agree on it
 only while both derive it from the same `lastCompleted` row — at boot and
 during catch-up — and diverge permanently after their first run.
 
-Measured with two workers and the interval shortened to one minute:
+Measured locally on 2026-09-13, against this repository's compose stack with
+two workers and the interval shortened to one minute. The timestamps below come
+from that run, not from the July production history:
 
 ```
  minute | executions | workers | distinct scheduled_for
