@@ -1,6 +1,5 @@
 const { GraphQLError } = require('graphql');
-const db = require('../../db/knex');
-const { isStaff } = require('../../lib/auth');
+const { isStaff, resolveCustomerId } = require('../../lib/auth');
 
 function requireUser(ctx) {
   if (!ctx.user) {
@@ -11,12 +10,8 @@ function requireUser(ctx) {
   return ctx.user;
 }
 
-async function resolveCustomerContext(ctx, requestedCustomerId) {
-  const user = requireUser(ctx);
-  if (!isStaff(user)) return user.customer_id;
-  if (requestedCustomerId) return Number(requestedCustomerId);
-  const first = await db('customers').orderBy('name').first('id');
-  return first.id;
+function resolveCustomerContext(ctx, requestedCustomerId) {
+  return resolveCustomerId(requireUser(ctx), requestedCustomerId);
 }
 
 function authorizeSite(ctx, site) {
