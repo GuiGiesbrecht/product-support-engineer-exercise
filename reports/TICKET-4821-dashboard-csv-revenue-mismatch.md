@@ -280,13 +280,13 @@ is unrelated to this defect.
 
 ## Preventing recurrence
 
-| Priority | Action                                                                                                                                                                                                                          |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **P1**   | **Alert on failed jobs.** `jobs.status = 'failed'` is already recorded and nothing consumes it. A revenue-critical job failed silently twice. This gap, not the missing index, is why the customer found the bug before we did. |
-| **P1**   | Have `refresh-kpi-views` report failures to Sentry as well as to `jobs` — `runJob` currently swallows them, so the error is invisible to alerting.                                                                              |
-| **P2**   | Add a startup or CI check asserting that every materialized view refreshed with `CONCURRENTLY` has a unique index. This class of defect is silent by construction.                                                              |
-| **P2**   | Treat "recreate a materialized view" as a reviewed pattern: any migration that drops a view must recreate its indexes in the same migration.                                                                                    |
-| **P3**   | Surface rollup freshness in the console — a dashboard reading a snapshot should say how old that snapshot is. The customer had no way to tell.                                                                                  |
+| Priority  | Action                                                                                                                                                                                                                          |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **P1**    | **Alert on failed jobs.** `jobs.status = 'failed'` is already recorded and nothing consumes it. A revenue-critical job failed silently twice. This gap, not the missing index, is why the customer found the bug before we did. |
+| **P1**    | Have `refresh-kpi-views` report failures to Sentry as well as to `jobs` — `runJob` currently swallows them, so the error is invisible to alerting.                                                                              |
+| **P2**    | Add a startup or CI check asserting that every materialized view refreshed with `CONCURRENTLY` has a unique index. This class of defect is silent by construction.                                                              |
+| **P2**    | Treat "recreate a materialized view" as a reviewed pattern: any migration that drops a view must recreate its indexes in the same migration.                                                                                    |
+| **P3** ✅ | **Done.** Surface rollup freshness in the console — a dashboard reading a snapshot should say how old that snapshot is. The customer had no way to tell.                                                                        |
 
 Deliberately **not** changed: the dual read path (rollup for the dashboard,
 live queries elsewhere) is a sound design for the traffic profile, and falling
