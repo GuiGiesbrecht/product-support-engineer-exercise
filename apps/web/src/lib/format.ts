@@ -22,6 +22,11 @@ export function formatKwh(value: number): string {
   return `${Math.round(value).toLocaleString('en-GB')} kWh`;
 }
 
+/** PPA rates are quoted to four decimals; every surface showing one uses this. */
+export function formatRate(ratePerKwh: number): string {
+  return `£${ratePerKwh.toFixed(4)}/kWh`;
+}
+
 export function formatTimestamp(iso: string | null): string {
   if (!iso) return '—';
   return `${iso.slice(0, 10)} ${iso.slice(11, 16)} UTC`;

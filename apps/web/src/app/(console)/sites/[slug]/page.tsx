@@ -3,7 +3,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import { gql } from '@/lib/api';
-import { formatDateRange, formatTimestamp } from '@/lib/format';
+import { formatDateRange, formatGBP, formatKwh, formatRate, formatTimestamp } from '@/lib/format';
+import KpiTile from '@/components/KpiTile';
 import SiteHeader, { SiteInfo } from '@/components/SiteHeader';
 import GenerationChart from '@/components/GenerationChart';
 import AlertsPanel, { AlertItem } from '@/components/AlertsPanel';
@@ -26,7 +27,7 @@ interface SiteDetails extends SiteInfo {
     } | null;
   }[];
   openAlerts: AlertItem[];
-  dailyKpis: { day: string; productionKwh: number }[];
+  dailyKpis: { day: string; productionKwh: number; revenueGbp: number; savingsGbp: number }[];
 }
 
 const QUERY = `query SiteOverview($slug: String!) {
@@ -43,7 +44,7 @@ const QUERY = `query SiteOverview($slug: String!) {
       connector { vendor externalId lastSeenAt syncState }
     }
     openAlerts { id type severity status message triggeredAt assetName }
-    dailyKpis { day productionKwh }
+    dailyKpis { day productionKwh revenueGbp savingsGbp }
   }
 }`;
 
@@ -81,9 +82,33 @@ export default function SitePage() {
       ? formatDateRange(site.dailyKpis[0].day, site.dailyKpis[site.dailyKpis.length - 1].day)
       : '';
 
+  const totals = site.dailyKpis.reduce(
+    (acc, row) => ({
+      productionKwh: acc.productionKwh + row.productionKwh,
+      revenueGbp: acc.revenueGbp + row.revenueGbp,
+      savingsGbp: acc.savingsGbp + row.savingsGbp,
+    }),
+    { productionKwh: 0, revenueGbp: 0, savingsGbp: 0 }
+  );
+
   return (
     <div className="space-y-6">
       <SiteHeader site={site} />
+
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <KpiTile label="Generation" value={formatKwh(totals.productionKwh)} hint={range} />
+        <KpiTile
+          label="Revenue"
+          value={formatGBP(totals.revenueGbp)}
+          hint={
+            site.activePpa
+              ? `at ${formatRate(site.activePpa.ratePerKwh)}`
+              : 'No PPA agreement covers this period'
+          }
+          hintTone={site.activePpa ? 'muted' : 'warning'}
+        />
+        <KpiTile label="Savings" value={formatGBP(totals.savingsGbp)} />
+      </div>
 
       <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
         <h2 className="mb-4 text-sm font-medium text-slate-700">
