@@ -24,7 +24,6 @@ pick up the hardening items the report raises. Outstanding items:
 | Alert on `jobs.status = 'failed'` — nothing consumes it today                                            | TICKET-4821 | P1       |
 | Report job failures to Sentry; `runJob` currently swallows them                                          | TICKET-4821 | P1       |
 | CI check: every view refreshed `CONCURRENTLY` must have a unique index                                   | TICKET-4821 | P2       |
-| Surface rollup freshness in the console                                                                  | TICKET-4821 | P3       |
 | Mark days where an active asset produced no reading — chart, CSV and Dashboard render them as measured   | TICKET-4830 | P1       |
 | Expose production per asset; today only the site total leaves the API                                    | TICKET-4830 | P1       |
 | Make ingest report discarded payloads — unmatched `external_id` is dropped silently behind a `202`       | TICKET-4830 | P1       |
@@ -36,7 +35,6 @@ pick up the hardening items the report raises. Outstanding items:
 | Warn on PPA agreements approaching expiry                                                                | TICKET-4835 | P2       |
 | Reconcile `ppa_agreements.status` with its date window, or drop it                                       | TICKET-4835 | P2       |
 | Give PPA agreements a write path — today renewals are hand-run SQL                                       | TICKET-4835 | P2       |
-| Show the applicable rate alongside revenue on Site Overview                                              | TICKET-4835 | P3       |
 | Return the worker pool to one replica (infrastructure, no code)                                          | TICKET-4847 | P1       |
 | Alert on duplicated job runs — nothing noticed this for six days                                         | TICKET-4847 | P1       |
 | Choose a scheduling architecture; all options need the due time anchored to a shared grid first          | TICKET-4847 | P1       |
@@ -50,8 +48,9 @@ pick up the hardening items the report raises. Outstanding items:
 
 ## Code changes
 
-| Change                                                                                                                                                                                                                                                           | Ticket      | Applied |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------- |
-| [`20260730090000_restore_mv_site_daily_kpis_unique_index.js`](../packages/db/migrations/20260730090000_restore_mv_site_daily_kpis_unique_index.js)                                                                                                               | TICKET-4821 | Yes     |
-| [`20260730094000_unique_open_alert_per_asset.js`](../packages/db/migrations/20260730094000_unique_open_alert_per_asset.js) + [`alertScan.js`](../apps/api/src/workers/jobs/alertScan.js) — contains the duplicate alerts; does not stop the duplicated execution | TICKET-4847 | Yes     |
-| [`export.js`](../apps/api/src/routes/export.js) + [`auth.js`](../apps/api/src/lib/auth.js) + [`api.ts`](../apps/web/src/lib/api.ts) — scopes the portfolio export to the selected customer                                                                       | TICKET-4852 | Yes     |
+| Change                                                                                                                                                                                                                                                                    | Ticket                    | Applied |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------- |
+| [`20260730090000_restore_mv_site_daily_kpis_unique_index.js`](../packages/db/migrations/20260730090000_restore_mv_site_daily_kpis_unique_index.js)                                                                                                                        | TICKET-4821               | Yes     |
+| [`20260730094000_unique_open_alert_per_asset.js`](../packages/db/migrations/20260730094000_unique_open_alert_per_asset.js) + [`alertScan.js`](../apps/api/src/workers/jobs/alertScan.js) — contains the duplicate alerts; does not stop the duplicated execution          | TICKET-4847               | Yes     |
+| [`export.js`](../apps/api/src/routes/export.js) + [`auth.js`](../apps/api/src/lib/auth.js) + [`api.ts`](../apps/web/src/lib/api.ts) — scopes the portfolio export to the selected customer                                                                                | TICKET-4852               | Yes     |
+| [`typeDefs.js`](../apps/api/src/graphql/typeDefs.js) + [`kpiService.js`](../apps/api/src/services/kpiService.js) + the dashboard and Site Overview pages — states how current the dashboard rollup is, and shows the rate a site's revenue is billed at beside the figure | TICKET-4821 + TICKET-4835 | Yes     |
