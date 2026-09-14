@@ -41,11 +41,17 @@ function isStaff(user) {
 
 /**
  * Staff can act on any customer; customer users are always scoped to their own
- * organisation regardless of what they ask for.
+ * organisation regardless of what they ask for. Staff without a selection fall
+ * back to the first customer, which is what the console switcher shows.
  */
-function resolveCustomerId(user, requestedCustomerId) {
+async function resolveCustomerId(user, requestedCustomerId) {
   if (!isStaff(user)) return user.customer_id;
-  return requestedCustomerId ? Number(requestedCustomerId) : null;
+  if (requestedCustomerId) {
+    const requested = Number(requestedCustomerId);
+    if (Number.isInteger(requested)) return requested;
+  }
+  const first = await db('customers').orderBy('name').first('id');
+  return first.id;
 }
 
 module.exports = { issueToken, login, userFromRequest, isStaff, resolveCustomerId };

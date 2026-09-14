@@ -38,7 +38,12 @@ export default function ExportsPage() {
     setBusy(true);
     setError(null);
     try {
-      await downloadCsv({ site: site || undefined, from, to });
+      await downloadCsv({
+        site: site || undefined,
+        customerId: getSelectedCustomerId(),
+        from,
+        to,
+      });
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Export failed');
     } finally {

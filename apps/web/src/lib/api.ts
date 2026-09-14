@@ -67,10 +67,16 @@ export async function gql<T>(query: string, variables?: Record<string, unknown>)
   return body.data as T;
 }
 
-export async function downloadCsv(params: { site?: string; from?: string; to?: string }) {
+export async function downloadCsv(params: {
+  site?: string;
+  customerId?: string | null;
+  from?: string;
+  to?: string;
+}) {
   const token = getToken();
   const search = new URLSearchParams();
   if (params.site) search.set('site', params.site);
+  if (params.customerId) search.set('customerId', params.customerId);
   if (params.from) search.set('from', params.from);
   if (params.to) search.set('to', params.to);
   const res = await fetch(`${API_URL}/export/csv?${search.toString()}`, {

@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const db = require('../db/knex');
-const { isStaff } = require('../lib/auth');
+const { isStaff, resolveCustomerId } = require('../lib/auth');
 const { buildCsv } = require('../services/exportService');
 const { getDataAnchor } = require('../services/kpiService');
 const { monthToDateRange } = require('@metris/shared');
@@ -8,15 +8,17 @@ const { monthToDateRange } = require('@metris/shared');
 const router = Router();
 
 /**
- * GET /export/csv?site=<slug>&from=YYYY-MM-DD&to=YYYY-MM-DD
- * Without a site the export covers every site the caller can see.
+ * GET /export/csv?site=<slug>&customerId=<id>&from=YYYY-MM-DD&to=YYYY-MM-DD
+ * Without a site the export covers every site of the customer in scope, which
+ * for staff is the one selected in the console switcher.
  * Without a range it defaults to month-to-date of the latest reading.
  */
 router.get('/csv', async (req, res) => {
   if (!req.user) return res.status(401).json({ error: 'Authentication required' });
 
-  const { site: slug } = req.query;
+  const { site: slug, customerId } = req.query;
   let siteIds;
+  let scopedCustomerId = null;
   let filenamePart = 'portfolio';
 
   if (slug) {
@@ -27,10 +29,8 @@ router.get('/csv', async (req, res) => {
     siteIds = [site.id];
     filenamePart = site.slug;
   } else {
-    if (isStaff(req.user)) {
-      return res.status(400).json({ error: 'Staff exports must specify a site' });
-    }
-    const rows = await db('sites').where({ customer_id: req.user.customer_id }).select('id');
+    scopedCustomerId = await resolveCustomerId(req.user, customerId);
+    const rows = await db('sites').where({ customer_id: scopedCustomerId }).select('id');
     siteIds = rows.map((row) => row.id);
   }
 
@@ -42,7 +42,7 @@ router.get('/csv', async (req, res) => {
 
   try {
     const csv = await buildCsv(siteIds, from, to);
-    res.locals.logMetadata = { site: slug || 'all', from, to };
+    res.locals.logMetadata = { site: slug || 'all', customerId: scopedCustomerId, from, to };
     res.setHeader('Content-Type', 'text/csv; charset=utf-8');
     res.setHeader(
       'Content-Disposition',
