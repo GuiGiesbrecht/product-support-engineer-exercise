@@ -1,17 +1,18 @@
 # TICKET-4856 · API request log does not identify which endpoint was called
 
-|                 |                                                                                                                 |
-| --------------- | --------------------------------------------------------------------------------------------------------------- |
-| Ticket          | [TICKET-4856](../tickets/TICKET-4856-api-logs-endpoint-identity/ticket.md)                                      |
-| Raised by       | Sofia Marchetti (`support@metris.energy`) — internal                                                            |
-| Reported        | 2026-07-29 17:05 UTC                                                                                            |
-| Severity        | Medium — no customer impact; the platform cannot measure or audit itself                                        |
-| Status          | **Fixed** · both columns now record what they claim to — verified in the reproduction environment, not deployed |
-| Root cause in   | **Code** — two independent defects, each of which alone empties one column                                      |
-| Affects         | Every request ever logged; every route, not only GraphQL                                                        |
-| Impact window   | Since the request logger was written                                                                            |
-| Investigated by | Guilherme Duarte Giesbrecht                                                                                     |
-| Report date     | 2026-09-14                                                                                                      |
+|                 |                                                                                                                                                    |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ticket          | [TICKET-4856](../tickets/TICKET-4856-api-logs-endpoint-identity/ticket.md)                                                                         |
+| Raised by       | Sofia Marchetti (`support@metris.energy`) — internal                                                                                               |
+| Reported        | 2026-07-29 17:05 UTC                                                                                                                               |
+| Severity        | Medium — no customer impact; the platform cannot measure or audit itself                                                                           |
+| Status          | **Fixed** · both columns now record what they claim to — verified in the reproduction environment, not deployed                                    |
+| Change          | [PR #7](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/7) — endpoint path and GraphQL operation recorded on every request |
+| Root cause in   | **Code** — two independent defects, each of which alone empties one column                                                                         |
+| Affects         | Every request ever logged; every route, not only GraphQL                                                                                           |
+| Impact window   | Since the request logger was written                                                                                                               |
+| Investigated by | Guilherme Duarte Giesbrecht                                                                                                                        |
+| Report date     | 2026-09-14                                                                                                                                         |
 
 ---
 

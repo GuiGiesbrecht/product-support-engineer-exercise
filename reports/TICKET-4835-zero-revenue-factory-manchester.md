@@ -1,17 +1,18 @@
 # TICKET-4835 · Revenue showing £0.00 for Factory Manchester
 
-|                 |                                                                           |
-| --------------- | ------------------------------------------------------------------------- |
-| Ticket          | [TICKET-4835](../tickets/TICKET-4835-zero-revenue-factory-manchester.md)  |
-| Customer        | Pennine Group plc (reported by Rachel Donnelly)                           |
-| Reported        | 2026-07-28 11:20 UTC                                                      |
-| Severity        | High — revenue and savings are both wrong, on every surface               |
-| Status          | **Diagnosed** · remediation is a data change, blocked on commercial input |
-| Root cause in   | **Data / process** — a contract renewal that was never recorded           |
-| Contributing    | **Code** — a missing PPA rate is silently treated as a rate of zero       |
-| Affects         | Factory Manchester only, from 2026-07-01                                  |
-| Investigated by | Guilherme Duarte Giesbrecht                                               |
-| Report date     | 2026-09-13 · last updated 2026-09-14                                      |
+|                 |                                                                                                                                                                                                                             |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ticket          | [TICKET-4835](../tickets/TICKET-4835-zero-revenue-factory-manchester.md)                                                                                                                                                    |
+| Customer        | Pennine Group plc (reported by Rachel Donnelly)                                                                                                                                                                             |
+| Reported        | 2026-07-28 11:20 UTC                                                                                                                                                                                                        |
+| Severity        | High — revenue and savings are both wrong, on every surface                                                                                                                                                                 |
+| Status          | **Diagnosed** · remediation is a data change, blocked on commercial input                                                                                                                                                   |
+| Change          | [PR #6](https://github.com/GuiGiesbrecht/product-support-engineer-exercise/pull/6) — rate shown beside revenue (P3 display item); the root-cause remediation is a data change awaiting commercial input, not a pull request |
+| Root cause in   | **Data / process** — a contract renewal that was never recorded                                                                                                                                                             |
+| Contributing    | **Code** — a missing PPA rate is silently treated as a rate of zero                                                                                                                                                         |
+| Affects         | Factory Manchester only, from 2026-07-01                                                                                                                                                                                    |
+| Investigated by | Guilherme Duarte Giesbrecht                                                                                                                                                                                                 |
+| Report date     | 2026-09-13 · last updated 2026-09-14                                                                                                                                                                                        |
 
 ---
 
