@@ -6,13 +6,14 @@ Each report states what was found, how it is known, and what to do next —
 diagnosis first, with the evidence that supports it, and a patch only where one
 is warranted.
 
-| Ticket                                                                         | Report                                                                                         | Status    | Root cause in           |
-| ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | --------- | ----------------------- |
-| [TICKET-4821](../tickets/TICKET-4821-dashboard-csv-revenue-mismatch/ticket.md) | [Dashboard revenue does not match CSV export](TICKET-4821-dashboard-csv-revenue-mismatch.md)   | **Fixed** | Code + monitoring       |
-| [TICKET-4830](../tickets/TICKET-4830-generation-drop-school-bristol.md)        | [Generation dropped ~40% at School Bristol](TICKET-4830-generation-drop-school-bristol.md)     | Diagnosed | Hardware / connectivity |
-| [TICKET-4835](../tickets/TICKET-4835-zero-revenue-factory-manchester.md)       | [Revenue showing £0.00 for Factory Manchester](TICKET-4835-zero-revenue-factory-manchester.md) | Diagnosed | Data / process          |
-| [TICKET-4847](../tickets/TICKET-4847-duplicate-offline-alerts.md)              | [Customer received duplicate offline alerts](TICKET-4847-duplicate-offline-alerts.md)          | Diagnosed | Configuration           |
-| [TICKET-4852](../tickets/TICKET-4852-csv-export-all-sites/ticket.md)           | [CSV export fails for "All sites" on staff accounts](TICKET-4852-csv-export-all-sites.md)      | **Fixed** | Code                    |
+| Ticket                                                                         | Report                                                                                                   | Status    | Root cause in           |
+| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | --------- | ----------------------- |
+| [TICKET-4821](../tickets/TICKET-4821-dashboard-csv-revenue-mismatch/ticket.md) | [Dashboard revenue does not match CSV export](TICKET-4821-dashboard-csv-revenue-mismatch.md)             | **Fixed** | Code + monitoring       |
+| [TICKET-4830](../tickets/TICKET-4830-generation-drop-school-bristol.md)        | [Generation dropped ~40% at School Bristol](TICKET-4830-generation-drop-school-bristol.md)               | Diagnosed | Hardware / connectivity |
+| [TICKET-4835](../tickets/TICKET-4835-zero-revenue-factory-manchester.md)       | [Revenue showing £0.00 for Factory Manchester](TICKET-4835-zero-revenue-factory-manchester.md)           | Diagnosed | Data / process          |
+| [TICKET-4847](../tickets/TICKET-4847-duplicate-offline-alerts.md)              | [Customer received duplicate offline alerts](TICKET-4847-duplicate-offline-alerts.md)                    | Diagnosed | Configuration           |
+| [TICKET-4852](../tickets/TICKET-4852-csv-export-all-sites/ticket.md)           | [CSV export fails for "All sites" on staff accounts](TICKET-4852-csv-export-all-sites.md)                | **Fixed** | Code                    |
+| [TICKET-4856](../tickets/TICKET-4856-api-logs-endpoint-identity/ticket.md)     | [API request log does not identify which endpoint was called](TICKET-4856-api-logs-endpoint-identity.md) | **Fixed** | Code                    |
 
 ## Follow-up work
 
@@ -45,6 +46,9 @@ pick up the hardening items the report raises. Outstanding items:
 | Record scope and outcome on rejected requests — 4xx rows carry no metadata                               | TICKET-4852 | P2       |
 | Name the portfolio export after its customer — every all-sites file is `metris-export-portfolio-…`       | TICKET-4852 | P3       |
 | Persist the customer switcher's default instead of only displaying it                                    | TICKET-4852 | P3       |
+| Generate seeded operational history from the code path it represents — this fixture hid the defect       | TICKET-4856 | P1       |
+| Smoke-check the shape of a log row: one request per route, path equal to the request path                | TICKET-4856 | P2       |
+| Stop reading request state inside `finish` — `req.user`, `req.body` and `res.locals` are read there too  | TICKET-4856 | P3       |
 
 ## Code changes
 
@@ -54,3 +58,4 @@ pick up the hardening items the report raises. Outstanding items:
 | [`20260730094000_unique_open_alert_per_asset.js`](../packages/db/migrations/20260730094000_unique_open_alert_per_asset.js) + [`alertScan.js`](../apps/api/src/workers/jobs/alertScan.js) — contains the duplicate alerts; does not stop the duplicated execution          | TICKET-4847               | Yes     |
 | [`export.js`](../apps/api/src/routes/export.js) + [`auth.js`](../apps/api/src/lib/auth.js) + [`api.ts`](../apps/web/src/lib/api.ts) — scopes the portfolio export to the selected customer                                                                                | TICKET-4852               | Yes     |
 | [`typeDefs.js`](../apps/api/src/graphql/typeDefs.js) + [`kpiService.js`](../apps/api/src/services/kpiService.js) + the dashboard and Site Overview pages — states how current the dashboard rollup is, and shows the rate a site's revenue is billed at beside the figure | TICKET-4821 + TICKET-4835 | Yes     |
+| [`requestLogger.js`](../apps/api/src/lib/requestLogger.js) + [`operationNamePlugin.js`](../apps/api/src/graphql/operationNamePlugin.js) — records the endpoint that was called and the GraphQL operation name                                                             | TICKET-4856               | Yes     |
