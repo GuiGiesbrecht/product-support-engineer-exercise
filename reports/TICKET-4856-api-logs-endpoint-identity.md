@@ -72,11 +72,29 @@ look at the seed.
 ### Defect 1 — `path` is read after Express has rewritten it
 
 `requestLogger` reads `req.path` **inside the `res.on('finish')` callback**
-(`apps/api/src/lib/requestLogger.js`). Express strips a router's mount prefix
-from `req.url` while that router handles the request and restores it when the
-router's chain returns. The response is finished **inside** the handler, so
-`finish` fires while the prefix is still stripped — and `req.path` derives from
-`req.url`.
+(`apps/api/src/lib/requestLogger.js`). Express trims a router's mount prefix
+from `req.url` when it dispatches into that router, and `req.path` is a getter
+derived from `req.url` — so the value depends on _when_ it is read.
+
+The intuitive account, that `finish` fires before the prefix is restored, is
+not what happens. The restore is part of the `next()` path back out of the
+router, and **a handler that answers the request never calls `next()`**. The
+trimmed URL is simply what the request carries for the rest of its life,
+`finish` included. Demonstrated against the same Express version, with one
+route answering and one calling through:
+
+```
+--- POST /auth/login ---   (handler responds; never calls next)
+middleware entry   req.url=/auth/login  req.path=/auth/login  originalUrl=/auth/login
+inside handler     req.url=/login       req.path=/login       originalUrl=/auth/login
+res finish         req.url=/login       req.path=/login       originalUrl=/auth/login
+                            ▲ never restored
+
+--- POST /auth/passthrough ---   (handler calls next)
+inside handler     req.url=/passthrough       req.path=/passthrough       originalUrl=/auth/passthrough
+after next()       req.url=/auth/passthrough  req.path=/auth/passthrough  originalUrl=/auth/passthrough
+                            ▲ restored
+```
 
 Every mounted router is affected, in exactly the way the rule predicts:
 
@@ -86,9 +104,14 @@ Every mounted router is affected, in exactly the way the rule predicts:
 | `POST /auth/login` | `/auth`    | `/login` |
 | `GET /export/csv`  | `/export`  | `/csv`   |
 
+GraphQL suffered most because its mount prefix _is_ the whole path: trimming
+`/graphql` from `/graphql` leaves nothing, which normalises to `/`. The other
+routes kept a truncated but still distinguishable name; GraphQL became a single
+bucket holding every read the console performs.
+
 The middleware itself is registered at app level, before the routers
 (`apps/api/src/index.js:28`), so at the moment it runs the path is still
-complete. Only the deferred read sees the rewritten value.
+complete. Only the deferred read sees the trimmed value.
 
 ### Defect 2 — nothing ever sends `operationName`
 
